@@ -1,0 +1,9 @@
+1. 웹 화면을 만들 때 내용물을 넣고 padding이나 margin으로 전체 화면의 크기를
+설정하는게 나은지 처음부터 width=1920px 처럼 설정을 해주는게 좋을지
+
+2. position:
+- absolute는 부모/조상 요소중 relative를 기준으로(없으면 body를 기준으로)
+- relative는 자신이 원래 static이었을 때의 위치 기준으로 offset을 지정
+*만약 offset 지정이 없으면 absolute는 부모의 static일때 기준으로위치
+
+3. display: none 상태에서는 transition으로 자연스러운 변화가 적용이 안 돼서 opacity를 이용함
