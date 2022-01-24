@@ -4,6 +4,9 @@ const slideSection3_1 = document.getElementsByClassName("section3-1")[0];
 const slideSection3_2 = document.getElementsByClassName("section3-2")[0];
 const slideSection3_3 = document.getElementsByClassName("section3-3")[0];
 
+const rigthArrow = document.querySelector("#right_arrow");
+const leftArrow = document.querySelector("#left_arrow");
+
 const section3 = [slideSection3_1, slideSection3_2, slideSection3_3];
 
 let i = 0;
@@ -14,7 +17,6 @@ function rightSlide() {
   section3[(i + 2) % 3].style.left = "1920px"; //세번째 두번째로
 
   i++;
-  printCycle();
 }
 
 function leftSlide() {
@@ -27,12 +29,7 @@ function leftSlide() {
   } else {
     i--;
   }
-
-  printCycle();
 }
 
-function printCycle() {
-  console.log(`FIRST PAGE : ${section3[0].style.left}`);
-  console.log(`SECOND PAGE : ${section3[1].style.left}`);
-  console.log(`THIRD PAGE : ${section3[2].style.left}`);
-}
+rigthArrow.addEventListener("click", rightSlide);
+leftArrow.addEventListener("click", leftSlide);
