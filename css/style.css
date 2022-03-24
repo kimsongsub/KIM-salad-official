@@ -3,6 +3,7 @@
 
 :root {
   --main-font: "Volkhov";
+  --main-width: 1920px;
 }
 
 .hideElement {
@@ -75,7 +76,7 @@ header > hr {
 }
 
 .section1 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1050px;
   padding-top: 110px;
   background-color: #e6de6e;
@@ -130,7 +131,7 @@ header > hr {
 }
 
 .section2 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1090px;
   background-color: #73b46e;
 }
@@ -181,7 +182,7 @@ header > hr {
 }
 
 .section3 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1220px;
   /* overflow: hidden; */
 }
@@ -205,14 +206,14 @@ header > hr {
 }
 
 #backgroundSection3-1 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1220px;
   background-color: #b9b6b6;
 }
 
 .section3-1 {
   position: relative;
-  width: 1920px;
+  width: var(--main-width);
 }
 .section3-1 > * {
   position: absolute;
@@ -260,7 +261,7 @@ header > hr {
 }
 
 #backgroundSection3-2 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1220px;
   background-color: #dbc5c3;
   z-index: -2;
@@ -268,7 +269,7 @@ header > hr {
 
 .section3-2 {
   position: relative;
-  width: 1920px;
+  width: var(--main-width);
 }
 .section3-2 * {
   position: absolute;
@@ -353,14 +354,14 @@ header > hr {
 }
 
 #backgroundSection3-3 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1220px;
   background-color: #66bec8;
 }
 
 .section3-3 {
   position: relative;
-  width: 1920px;
+  width: var(--main-width);
 }
 .section3-3 * {
   position: absolute;
@@ -440,7 +441,7 @@ header > hr {
 }
 
 #backgroundSection4 {
-  width: 1920px;
+  width: var(--main-width);
   height: 1090px;
   background-color: #dbbf65;
   z-index: 0;
