@@ -391,32 +391,26 @@ header > hr {
   left: 250px;
 }
 
-#content3-3-1 {
+.content3-3 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+#content3-3-1 {
   top: 420px;
   left: 300px;
 }
 
 #content3-3-2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
   top: 420px;
   left: 1028px;
 }
 #content3-3-3 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
   top: 810px;
   left: 300px;
 }
 #content3-3-4 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
   top: 810px;
   left: 1028px;
 }
@@ -479,12 +473,8 @@ header > hr {
 }
 
 .history {
-  left: 1290px;
+  left: 1310px;
   top: 230px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
-}
-
-.history > p {
-  width: 200px;
 }
