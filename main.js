@@ -1,13 +1,13 @@
 "use strict";
 
-const slideSection3_1 = document.getElementsByClassName("section3-1")[0];
-const slideSection3_2 = document.getElementsByClassName("section3-2")[0];
-const slideSection3_3 = document.getElementsByClassName("section3-3")[0];
+const section3_1 = document.getElementsByClassName("section3-1")[0];
+const section3_2 = document.getElementsByClassName("section3-2")[0];
+const section3_3 = document.getElementsByClassName("section3-3")[0];
 
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
 
-const section3 = [slideSection3_1, slideSection3_2, slideSection3_3];
+const section3 = [section3_1, section3_2, section3_3];
 
 let i = 0;
 
