@@ -1,4 +1,5 @@
 "use strict";
+const MAX_PAGE_NUMBER = 2999;
 
 const section3_1 = document.getElementsByClassName("section3-1")[0];
 const section3_2 = document.getElementsByClassName("section3-2")[0];
@@ -23,7 +24,7 @@ function leftSlide() {
   section3[(i + 2) % 3].classList.remove("hideElement");
 
   if (i == 0) {
-    i = 299;
+    i = MAX_PAGE_NUMBER;
   } else {
     i--;
   }
