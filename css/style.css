@@ -184,7 +184,6 @@ header > hr {
 .section3 {
   width: var(--main-width);
   height: 1220px;
-  /* overflow: hidden; */
 }
 
 #left_arrow {
@@ -297,27 +296,17 @@ header > hr {
   top: 667px;
 }
 
-#pig1 {
-  z-index: 1;
-}
-
-#pig2 {
-  z-index: 0;
-}
-
+#pig1,
 #cow1 {
   z-index: 1;
 }
 
+#pig2,
 #cow2 {
   z-index: 0;
 }
 
-#pig1:hover {
-  opacity: 0;
-  transition: all 1s;
-}
-
+#pig1:hover,
 #cow1:hover {
   opacity: 0;
   transition: all 1s;
