@@ -268,7 +268,6 @@ header > hr {
 
 .section3-2 {
   position: relative;
-  /* left: 1920px; */
   width: 1920px;
 }
 .section3-2 * {
@@ -362,7 +361,6 @@ header > hr {
 .section3-3 {
   position: relative;
   width: 1920px;
-  /* left: 3840px; */
 }
 .section3-3 * {
   position: absolute;
