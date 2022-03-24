@@ -5,6 +5,10 @@
   --main-font: "Volkhov";
 }
 
+.hideElement {
+  display: none;
+}
+
 body {
   font-family: var(--main-font);
 }
@@ -164,7 +168,7 @@ header > hr {
   padding: 30px 0px 190px 104px;
 }
 
-.section2 > img {
+.section2 > .section2Content > img {
   padding: 50px 60px 0px 100px;
   z-index: 1;
 }
@@ -179,7 +183,7 @@ header > hr {
 .section3 {
   width: 1920px;
   height: 1220px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #left_arrow {
@@ -264,7 +268,7 @@ header > hr {
 
 .section3-2 {
   position: relative;
-  left: 1920px;
+  /* left: 1920px; */
   width: 1920px;
 }
 .section3-2 * {
@@ -358,7 +362,7 @@ header > hr {
 .section3-3 {
   position: relative;
   width: 1920px;
-  left: 3840px;
+  /* left: 3840px; */
 }
 .section3-3 * {
   position: absolute;
