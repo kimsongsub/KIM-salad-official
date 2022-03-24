@@ -12,17 +12,15 @@ const section3 = [slideSection3_1, slideSection3_2, slideSection3_3];
 let i = 0;
 
 function rightSlide() {
-  section3[i % 3].style.left = "3840px"; //첫번째 맨뒤로
-  section3[(i + 1) % 3].style.left = "0px"; //두번째 첫번째로
-  section3[(i + 2) % 3].style.left = "1920px"; //세번째 두번째로
+  section3[i % 3].classList.add("hideElement");
+  section3[(i + 1) % 3].classList.remove("hideElement");
 
   i++;
 }
 
 function leftSlide() {
-  section3[i % 3].style.left = "1920px"; //첫번째 두번째로
-  section3[(i + 1) % 3].style.left = "3840px"; //두번째 세번째로
-  section3[(i + 2) % 3].style.left = "0px"; //세번째 맨앞으로
+  section3[i % 3].classList.add("hideElement");
+  section3[(i + 2) % 3].classList.remove("hideElement");
 
   if (i == 0) {
     i = 299;
