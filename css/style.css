@@ -3,7 +3,7 @@
 
 :root {
   --main-font: "Volkhov";
-  --main-width: 1920px;
+  --main-width: 1200px;
 }
 
 .hideElement {
@@ -12,6 +12,7 @@
 
 body {
   font-family: var(--main-font);
+  background-color: pink;
 }
 
 a {
@@ -32,10 +33,10 @@ hr {
 /* header */
 
 .header {
-  width: 100%;
+  width: 90%;
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
   position: fixed;
   font-weight: bold;
   z-index: 10;
@@ -44,40 +45,35 @@ hr {
 header > hr {
   position: fixed;
   background-color: #000000;
-  margin-top: 110px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 3px;
   z-index: 10;
 }
 
 .header__logo {
-  display: flex;
-}
-
-#KIM-salad {
-  padding: 15px 300px 0 0;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .header__menu {
-  margin-top: 10px;
+  width: 60%;
   display: flex;
   list-style: none;
   font-size: 22px;
 }
 
 .header__menu > li {
-  padding: 0 30px 0 30px;
+  padding: 0 20px 0 20px;
 }
 
-.header__icons {
-  font-size: 40px;
-  display: flex;
-  margin-right: 20px;
+.header__icons > * {
+  font-size: 30px;
 }
 
 .section1 {
-  width: var(--main-width);
-  height: 1050px;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 110px;
   background-color: #e6de6e;
 }
@@ -89,35 +85,43 @@ header > hr {
 }
 
 .mainInfo > video {
-  padding: 34px 67px 34px 140px;
+  width: 30%;
+  /* padding: 34px 67px 34px 140px; */
+  margin: 0 auto;
+}
+
+.paragraph1 {
+  width: 60%;
 }
 
 #firstParagraph {
   padding: 40px 0 10px 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 50px;
 }
 
 #secondParagraph {
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 40px;
 }
 
 .paragraph1 > hr {
   height: 4px;
   background-color: #ffffff;
-  width: 812px;
+  width: 95%;
 }
 
 .mainImage {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 160px 167px 0 167px;
+  /* padding: 160px 167px 0 167px; */
 }
 
 .mainImage > img {
+  width: 20%;
   border: 2px #ffffff solid;
   border-radius: 200px;
 }
