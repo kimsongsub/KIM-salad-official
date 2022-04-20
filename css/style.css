@@ -13,6 +13,8 @@
 body {
   font-family: var(--main-font);
   background-color: pink;
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -32,47 +34,48 @@ hr {
 
 /* header */
 
-.header {
+header > nav {
+  display: flex;
+  position: fixed;
   width: 90%;
   margin: 40px auto;
-  display: flex;
   justify-content: space-between;
-  position: fixed;
   font-weight: bold;
   z-index: 10;
 }
 
 header > hr {
   position: fixed;
-  background-color: #000000;
+  background-color: black;
   width: 90%;
-  margin: 0 auto;
+  margin: 110px auto;
   height: 3px;
   z-index: 10;
 }
 
 .header__logo {
   width: 20%;
-  margin: 0 auto;
 }
 
 .header__menu {
-  width: 60%;
+  width: 70%;
   display: flex;
   list-style: none;
   font-size: 22px;
 }
 
 .header__menu > li {
-  padding: 0 20px 0 20px;
+  margin: 10px auto;
 }
 
-.header__icons > * {
+.header__icons {
+  width: 10%;
   font-size: 30px;
 }
 
 .section1 {
-  width: 90%;
+  float: left;
+  /* width: 90%; */
   margin: 0 auto;
   padding-top: 110px;
   background-color: #e6de6e;
