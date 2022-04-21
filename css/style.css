@@ -3,7 +3,6 @@
 
 :root {
   --main-font: "Volkhov";
-  --main-width: 1200px;
 }
 
 .hideElement {
@@ -142,59 +141,59 @@ header > hr {
 }
 
 .section2 {
-  width: var(--main-width);
-  height: 1090px;
+  display: flex;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
   background-color: #73b46e;
 }
 
-.section2Content {
-  position: relative;
+#backgroundCanvas2 {
   display: flex;
-  padding: 300px 160px 190px 160px;
+  width: 90%;
+  margin: 15% auto;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .paragraph2 {
-  line-height: 68px;
+  width: 40%;
+  margin: 0 auto;
+  line-height: 60px;
   z-index: 2;
   color: #ffffff;
-  text-shadow: 0px 1px 0 #000000;
+  text-shadow: 0px 2px 0 #000000;
 }
 
 #thirdParagraph {
-  font-size: 42px;
+  line-height: 30px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
-  padding: 83px 0px 41px 58px;
+  margin: 15% auto;
 }
 
 .paragraph2 > hr {
-  width: 554px;
+  width: 100%;
   height: 3px;
-  margin-left: 84px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
 #fourthParagraph {
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
-  padding: 30px 0px 190px 104px;
+  padding-left: 5%;
 }
 
-.section2 > .section2Content > img {
-  padding: 50px 60px 0px 100px;
-  z-index: 1;
-}
-
-#backgroundCanvas2 {
-  position: absolute;
-  background-color: #f2e5d9;
-  opacity: 55%;
-  z-index: 0;
+.section2 > div > img {
+  width: 50%;
+  margin: 3% auto;
 }
 
 .section3 {
-  width: var(--main-width);
-  height: 1220px;
+  float: left;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #left_arrow {
@@ -427,12 +426,15 @@ header > hr {
 }
 
 .section4 {
-  position: relative;
+  float: left;
+  width: 90%;
+  margin: 0 auto;
+  /* position: relative; */
 }
 
-.section4 > * {
+/* .section4 > * {
   position: absolute;
-}
+} */
 
 #backgroundSection4 {
   width: var(--main-width);
