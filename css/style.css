@@ -173,7 +173,7 @@ header > hr {
 }
 
 .paragraph2 > hr {
-  width: 100%;
+  width: 90%;
   height: 3px;
   margin: 0 auto;
   background-color: #ffffff;
