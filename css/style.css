@@ -198,13 +198,13 @@ header > hr {
 #left_arrow {
   position: absolute;
   width: 3%;
-  margin-top: 60%;
+  margin-top: 50%;
 }
 
 #right_arrow {
   position: absolute;
   width: 3%;
-  margin-top: 60%;
+  margin-top: 50%;
   margin-left: 87%;
 }
 
@@ -215,7 +215,7 @@ header > hr {
 
 .section3-1-side {
   width: 50%;
-  margin: 20% auto;
+  margin: 15% auto;
 }
 
 #loveEarthImg {
@@ -227,7 +227,7 @@ header > hr {
 #content3-1-1 {
   font-size: 18px;
   width: 70%;
-  margin: 10% auto 0 auto;
+  margin: 0 auto;
 }
 
 #qusetion3-1 {
@@ -358,76 +358,53 @@ header > hr {
 }
 
 #backgroundSection3-3 {
-  width: var(--main-width);
-  height: 1220px;
   background-color: #66bec8;
+  padding-top: 20%;
 }
 
-.section3-3 {
-  position: relative;
-  width: var(--main-width);
+#answer3-3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 0 5% 10%;
 }
-.section3-3 * {
-  position: absolute;
+
+.section3-3-grid-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: auto auto;
+  row-gap: 5%;
+  column-gap: 10%;
+  padding-bottom: 10%;
 }
 
 #backgroundCanvas3-3-1 {
   background-color: #efeaf6;
-  top: 386px;
-  left: 252px;
-  border: #000000 2px solid;
 }
 
 #backgroundCanvas3-3-2 {
   background-color: #f3d5d5;
-  top: 386px;
-  left: 980px;
-  border: #000000 2px solid;
 }
 
 #backgroundCanvas3-3-3 {
   background-color: #e0f3ee;
-  top: 776px;
-  left: 252px;
-  border: #000000 2px solid;
 }
 
 #backgroundCanvas3-3-4 {
   background-color: #f5f4e3;
-  top: 776px;
-  left: 980px;
-  border: #000000 2px solid;
 }
 
-#answer3-3 {
-  font-size: 52px;
-  font-weight: bold;
-  top: 280px;
-  left: 250px;
+.section3-3-backgroundCanvas {
+  border: #000000 2px solid;
+  padding: 10%;
+  width: 90%;
+  height: auto;
 }
 
 .content3-3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
-}
-
-#content3-3-1 {
-  top: 420px;
-  left: 300px;
-}
-
-#content3-3-2 {
-  top: 420px;
-  left: 1028px;
-}
-#content3-3-3 {
-  top: 810px;
-  left: 300px;
-}
-#content3-3-4 {
-  top: 810px;
-  left: 1028px;
 }
 
 .section4 {
@@ -435,18 +412,7 @@ header > hr {
   float: left;
   width: 100%;
   margin: 0 auto;
-  /* position: relative; */
 }
-
-/* .section4 > * {
-  position: absolute;
-} */
-/* 
-#backgroundSection4 {
-  width: var(--main-width);
-  height: 1090px;
-  z-index: 0;
-} */
 
 #since {
   font-size: 400px;
