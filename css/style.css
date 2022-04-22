@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--main-font);
-  background-color: pink;
+  background-color: greenyellow;
   width: 90%;
   margin: 0 auto;
 }
@@ -198,18 +198,18 @@ header > hr {
 
 #left_arrow {
   position: absolute;
-  width: 5%;
-  margin-top: 70%;
+  width: 3%;
+  margin-top: 60%;
 }
 
 #right_arrow {
   position: absolute;
-  width: 5%;
-  margin-top: 70%;
-  margin-left: 85%;
+  width: 3%;
+  margin-top: 60%;
+  margin-left: 87%;
 }
 
-.section3-1 {
+#backgroundSection3-1 {
   background-color: #b9b6b6;
   display: flex;
 }
@@ -228,7 +228,7 @@ header > hr {
 #content3-1-1 {
   font-size: 18px;
   width: 70%;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
 }
 
 #qusetion3-1 {
@@ -264,40 +264,66 @@ header > hr {
 }
 
 #backgroundSection3-2 {
-  width: var(--main-width);
-  height: 1220px;
+  padding-top: 20%;
+  padding-bottom: 20%;
   background-color: #dbc5c3;
-  z-index: -2;
-}
-
-.section3-2 {
-  position: relative;
-  width: var(--main-width);
-}
-.section3-2 * {
-  position: absolute;
 }
 
 #backgroundCanvas3-2 {
   background-color: #e28b84;
-  top: 660px;
-  z-index: -1;
+  padding: 10%;
 }
 
-.section3-2 > img {
+.section3-2-upper {
+  display: flex;
+}
+
+.section3-2-upper-paragraph {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section3-2-upper-img {
+  width: 30%;
+}
+
+.section3-2-down {
+  display: flex;
+}
+
+#answer3-2 {
+  font-size: 42px;
+  font-weight: bold;
+  text-shadow: 0px 1px 0 #000000;
+}
+
+#content3-2-1 {
+  font-size: 20px;
+}
+
+#content3-2-2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  text-shadow: 0px 1px 0 #000000;
+}
+
+#content3-2-3 {
+  font-size: 20px;
+}
+
+.section3-2 img {
+  position: absolute;
   border: #707070 5px solid;
 }
 
 #pig1,
 #pig2 {
-  left: 1165px;
-  top: 230px;
 }
 
 #cow1,
 #cow2 {
-  left: 213px;
-  top: 667px;
 }
 
 #pig1,
@@ -314,36 +340,6 @@ header > hr {
 #cow1:hover {
   opacity: 0;
   transition: all 1s;
-}
-
-#answer3-2 {
-  font-size: 52px;
-  font-weight: bold;
-  text-shadow: 0px 1px 0 #000000;
-  left: 223px;
-  top: 200px;
-}
-
-#content3-2-1 {
-  font-size: 20px;
-  top: 330px;
-  left: 230px;
-}
-
-#content3-2-2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 28px;
-  text-shadow: 0px 1px 0 #000000;
-  top: 686px;
-  left: 1060px;
-}
-
-#content3-2-3 {
-  font-size: 20px;
-  top: 790px;
-  left: 1060px;
 }
 
 #backgroundSection3-3 {
