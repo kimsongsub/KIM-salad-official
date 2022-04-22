@@ -47,9 +47,9 @@
 
     <!-- section1 -->
     <section class="section1">
-      <span class="mainInfo">
+      <div class="mainInfo">
         <video controls autoplay src="videos/main.mp4" loop="true"></video>
-        <span class="paragraph1">
+        <div class="paragraph1">
           <p id="firstParagraph">
             "KIM-salad" 는 혼자 만들어 먹기엔 많이 남게되는<br />
             샐러드 재료의 낭비를 줄이고자 시작한 샐러드 사업입니다.
@@ -64,8 +64,8 @@
             통해서 세척하고 있습니다. 5천원이라는 합리적인 가격으로 편리하고
             맛있게 환경과 건강을 모두 지켜드립니다.
           </p>
-        </span>
-      </span>
+        </div>
+      </div>
 
       <div class="mainImage">
         <img src="images/dish1.png" />
@@ -98,7 +98,7 @@
       <img id="left_arrow" src="images/left-arrow.png" />
       <img id="right_arrow" src="images/right_arrow.png" />
 
-      <section class="section3-1 hideElement">
+      <section class="section3-1">
         <div id="backgroundSection3-1">
           <div class="section3-1-side">
             <img
@@ -108,7 +108,7 @@
             <p id="content3-1-1">
               15% of global greenhouse gas emissions come from livestock
               raising. Greenhouse gas isn't the only environmental problem
-              associated with cattle. The dung produced by cows is equivalent to
+              associated with cattle.</br></br> The dung produced by cows is equivalent to
               the share of 16 people. As a result, there are problems with water
               quality and soil contamination.
             </p>
@@ -185,7 +185,7 @@
         </div>
       </section>
 
-      <section class="section3-3">
+      <section class="section3-3 hideElement">
         <div id="backgroundSection3-3">
           <p id="answer3-3">3. Our Health</p>
           <div class="section3-3-grid-container">
@@ -194,7 +194,7 @@
                 Processed meat foods such as ham, sausage, and bacon are
                 substances that cause cancer in humans, and include beef and
                 pork. Red meat is a substance that has a high potential to cause
-                cancer in humans.<br /><br /><br /><br />
+                cancer in humans.<br /><br /><br />
                 - International Agency for Research on Cancer(IARC) -
               </p>
             </div>
@@ -232,24 +232,23 @@
       </section>
     </section>
 
-    <section class="section4 hideElement">
-      <img id="profile" src="images/profile.jpg" width="500px" height="500px" />
-      <img id="profile2" src="images/profile2.jpg" />
-      <img id="history_icon" src="images/history_icon.png" />
-
-      <canvas id="historyCanvas1" width="230px" height="300px"></canvas>
-      <canvas id="historyCanvas2" width="230px" height="300px"></canvas>
-
+    <section class="section4">
       <p id="since">Since<br />2021</p>
-
-      <ul class="history">
-        <li>
-          <p>2021.06.12<br />- KIM-salad Website OPEN</p>
-        </li>
-        <li>
-          <p>2021.07.14<br />- KIM-salad Instagram OPEN</p>
-        </li>
-      </ul>
+      <div class="section4-container">
+        <div id="historyCanvas1" width="230px" height="300px"><ul class="history">
+            <li>
+              <p>2021.06.12<br />- KIM-salad Website OPEN</p>
+            </li>
+            <li>
+              <p>2021.07.14<br />- KIM-salad Instagram OPEN</p>
+            </li>
+          </ul>
+        </div>
+        <div id="historyCanvas2" width="230px" height="300px"></div>
+        <img id="profile2" src="images/profile2.jpg" />
+        <img id="profile" src="images/profile.jpg" />
+        <img id="history_icon"  width="230px" height="300px src="images/history_icon.png" />
+      </div>
     </section>
     <script src="main.js" defer></script>
   </body>

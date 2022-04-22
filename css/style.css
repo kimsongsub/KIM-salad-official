@@ -226,8 +226,8 @@ header > hr {
 
 #content3-1-1 {
   font-size: 18px;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 5% auto 0 auto;
 }
 
 #qusetion3-1 {
@@ -408,57 +408,55 @@ header > hr {
 }
 
 .section4 {
-  background-color: #dbbf65;
   float: left;
-  width: 100%;
-  margin: 0 auto;
+  background-color: #dbbf65;
+  display: flex;
+  padding-top: 10%;
 }
 
 #since {
-  font-size: 400px;
-  line-height: 475px;
+  background-color: #66bec8;
+  width: 50%;
+  font-size: 300px;
+  line-height: 350px;
   color: #ff6737;
   opacity: 60%;
   text-align: center;
-  margin: 125px 0 125px 50px;
   text-shadow: 2px 2px 2px black;
 }
 
+.section4-container {
+  width: 50%;
+  background-color: #73b46e;
+}
+
 #profile {
-  left: 1295px;
-  top: 470px;
   border: #000000 5px solid;
+  width: 40%;
+  height: auto;
 }
 
 #profile2 {
-  left: 1010px;
-  top: 713px;
   border: #000000 5px solid;
+  width: 20%;
+  height: auto;
 }
 
 #historyCanvas1 {
-  left: 1300px;
-  top: 145px;
   background-color: white;
   opacity: 60%;
 }
 
 #historyCanvas2 {
-  left: 1560px;
-  top: 145px;
   background-color: white;
   opacity: 60%;
 }
 
-#history_icon {
-  left: 1300px;
-  top: 150px;
-  z-index: 1;
-}
+/* #history_icon {
+  margin: auto;
+} */
 
 .history {
-  left: 1310px;
-  top: 230px;
   font-size: 10px;
   font-weight: bold;
 }
