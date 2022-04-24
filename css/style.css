@@ -409,14 +409,15 @@ header > hr {
 
 .section4 {
   float: left;
+  width: 100%;
   background-color: #dbbf65;
   display: flex;
   padding: 10% 0 5% 0;
 }
 
 #since {
-  width: 50%;
-  font-size: 350px;
+  width: 60%;
+  font-size: 18rem;
   line-height: 400px;
   color: #ff6737;
   opacity: 70%;
@@ -426,7 +427,7 @@ header > hr {
 }
 
 .section4-container {
-  width: 50%;
+  width: 40%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
@@ -458,7 +459,6 @@ header > hr {
   grid-column: 1 / 2;
   align-self: flex-end;
   justify-self: end;
-  margin-bottom: 4%;
 }
 
 #KIM-salad_logo2 {
