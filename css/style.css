@@ -60,6 +60,11 @@ header > hr {
   width: 20%;
 }
 
+.header__logo img {
+  width: 3rem;
+  height: auto;
+}
+
 .header__menu {
   width: 70%;
   display: flex;
