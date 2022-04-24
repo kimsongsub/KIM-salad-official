@@ -332,7 +332,7 @@ header > hr {
 #pig1,
 #pig2 {
   width: 30%;
-  height: 55%;
+  height: 50%;
 }
 
 #cow1,
@@ -411,52 +411,66 @@ header > hr {
   float: left;
   background-color: #dbbf65;
   display: flex;
-  padding-top: 10%;
+  padding: 10% 0 5% 0;
 }
 
 #since {
-  background-color: #66bec8;
   width: 50%;
-  font-size: 300px;
-  line-height: 350px;
+  font-size: 350px;
+  line-height: 400px;
   color: #ff6737;
-  opacity: 60%;
+  opacity: 70%;
   text-align: center;
   text-shadow: 2px 2px 2px black;
+  margin-left: 5%;
 }
 
 .section4-container {
   width: 50%;
-  background-color: #73b46e;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
 }
 
-#profile {
-  border: #000000 5px solid;
+.history {
+  display: flex;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.historyCanvas {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 10%;
+}
+
+#history_icon {
   width: 40%;
   height: auto;
 }
 
-#profile2 {
+.KIM-salad_logo {
   border: #000000 5px solid;
-  width: 20%;
-  height: auto;
 }
 
-#historyCanvas1 {
-  background-color: white;
-  opacity: 60%;
+#KIM-salad_logo1 {
+  width: 70%;
+  grid-row: 2/ 3;
+  grid-column: 1 / 2;
+  align-self: flex-end;
+  justify-self: end;
+  margin-bottom: 4%;
 }
 
-#historyCanvas2 {
-  background-color: white;
-  opacity: 60%;
+#KIM-salad_logo2 {
+  width: 80%;
+  grid-row: 2/ 3;
+  grid-column: 2 / 3;
+  justify-self: center;
 }
 
-/* #history_icon {
-  margin: auto;
-} */
-
-.history {
-  font-size: 10px;
+.historyCanvas p {
+  font-size: 12px;
+  text-align: left;
+  padding: 10%;
   font-weight: bold;
 }
