@@ -13,15 +13,15 @@ const section3 = [section3_1, section3_2, section3_3];
 let i = 0;
 
 function rightSlide() {
-  section3[i % 3].classList.add("hideElement");
-  section3[(i + 1) % 3].classList.remove("hideElement");
+  section3[i % 3].classList.add("hide-element");
+  section3[(i + 1) % 3].classList.remove("hide-element");
 
   i++;
 }
 
 function leftSlide() {
-  section3[i % 3].classList.add("hideElement");
-  section3[(i + 2) % 3].classList.remove("hideElement");
+  section3[i % 3].classList.add("hide-element");
+  section3[(i + 2) % 3].classList.remove("hide-element");
 
   if (i == 0) {
     i = MAX_PAGE_NUMBER;
