@@ -30,11 +30,16 @@ hr {
 }
 
 /* header */
+
+.header-background {
+  background-color: #e6de6e;
+}
+
 header > nav {
   display: flex;
   position: fixed;
   width: 90%;
-  margin: 40px auto;
+  padding: 27px 0 27px 0;
   justify-content: space-between;
   font-weight: bold;
   z-index: 10;
@@ -43,7 +48,7 @@ header > hr {
   position: fixed;
   background-color: black;
   width: 90%;
-  margin: 110px auto;
+  margin-top: 110px;
   height: 3px;
   z-index: 10;
 }
@@ -155,14 +160,13 @@ header > hr {
   width: 40%;
   margin: 0 auto;
   line-height: 60px;
-  z-index: 2;
   color: #ffffff;
   text-shadow: 0px 2px 0 #000000;
 }
 
 #thirdParagraph {
   line-height: 30px;
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin: 15% auto;
@@ -176,7 +180,7 @@ header > hr {
 }
 
 #fourthParagraph {
-  font-size: 18px;
+  font-size: 1rem;
   text-align: left;
   padding-left: 5%;
 }
@@ -187,6 +191,7 @@ header > hr {
 }
 
 .section3 {
+  background-color: #b9b6b6;
   float: left;
   width: 100%;
   margin: 0 auto;
