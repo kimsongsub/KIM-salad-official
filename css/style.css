@@ -67,7 +67,6 @@ header > hr {
   list-style: none;
   font-size: 22px;
 }
-
 .header__menu > li {
   margin: 10px auto;
 }
@@ -419,7 +418,7 @@ header > hr {
 
 #since {
   width: 60%;
-  font-size: 18rem;
+  font-size: 16rem;
   line-height: 400px;
   color: #ff6737;
   opacity: 70%;
@@ -441,7 +440,7 @@ header > hr {
   grid-row: 1/2;
 }
 
-.historyCanvas {
+.history-canvas {
   background-color: rgba(255, 255, 255, 0.7);
   margin: 10%;
 }
@@ -451,11 +450,11 @@ header > hr {
   height: auto;
 }
 
-.KIM-salad_logo {
+.KIM-salad-logo {
   border: #000000 5px solid;
 }
 
-#KIM-salad_logo1 {
+#KIM-salad-logo1 {
   width: 70%;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -463,14 +462,14 @@ header > hr {
   justify-self: end;
 }
 
-#KIM-salad_logo2 {
+#KIM-salad-logo2 {
   width: 80%;
   grid-row: 2/3;
   grid-column: 2/3;
   justify-self: center;
 }
 
-.historyCanvas p {
+.history-canvas p {
   font-size: 12px;
   text-align: left;
   padding: 10%;
