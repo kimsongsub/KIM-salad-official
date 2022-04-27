@@ -21,7 +21,10 @@ function rightSlide() {
   section3Array[i % 3].classList.add("hide-element");
   section3Array[(i + 1) % 3].classList.remove("hide-element");
   const section3Background = section3Array[(i + 1) % 3].querySelector("div");
+
   section3.style.backgroundColor =
+    getComputedStyle(section3Background).backgroundColor;
+  headerBackground.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
 
   i++;
@@ -30,9 +33,12 @@ function rightSlide() {
 function leftSlide() {
   section3Array[i % 3].classList.add("hide-element");
   section3Array[(i + 2) % 3].classList.remove("hide-element");
-  section3.style.backgroundColor = getComputedStyle(
-    section3Array[(i + 1) % 3]
-  ).backgroundColor;
+  const section3Background = section3Array[(i + 2) % 3].querySelector("div");
+
+  section3.style.backgroundColor =
+    getComputedStyle(section3Background).backgroundColor;
+  headerBackground.style.backgroundColor =
+    getComputedStyle(section3Background).backgroundColor;
 
   if (i == 0) {
     i = MAX_PAGE_NUMBER;
