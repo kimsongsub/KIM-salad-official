@@ -9,12 +9,6 @@
   display: none;
 }
 
-body {
-  font-family: var(--main-font);
-  width: 90%;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -30,32 +24,32 @@ hr {
   border: 0;
 }
 
-/* header */
-
-.header-background {
-  background-color: #e6de6e;
+body {
+  width: var(--full-width);
+  margin: 0 auto;
 }
 
+/* header */
 header > nav {
   display: flex;
   position: fixed;
-  width: 90%;
-  padding: 27px 0 27px 0;
-  justify-content: space-between;
+  width: 80%;
+  padding: 27px 10%;
   font-weight: bold;
   z-index: 10;
+  justify-content: space-between;
 }
 header > hr {
   position: fixed;
+  width: var(--full-width);
   background-color: black;
-  width: 90%;
   margin-top: 110px;
   height: 3px;
   z-index: 10;
 }
 
 #KIM-salad {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .header__logo {
@@ -77,20 +71,13 @@ header > hr {
   margin: 10px auto;
 }
 
-.header__icons {
-  width: 10%;
-  font-size: 30px;
-}
-
 .section1 {
-  float: left;
-  margin: 0 auto;
-  padding-top: 110px;
   background-color: #e6de6e;
+  padding-top: 110px;
 }
 
 .mainInfo {
-  padding: 30px;
+  padding: 34px 10%;
   display: flex;
   background-color: black;
   color: #fefefe;
@@ -105,37 +92,37 @@ header > hr {
 }
 
 #firstParagraph {
-  padding: 40px 0 10px 0;
-  font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 50px;
 }
 
 #secondParagraph {
-  padding: 10px 0 10px 0;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .paragraph1 > hr {
   height: 4px;
   background-color: #ffffff;
-  width: 95%;
+  width: 100%;
 }
 
 .mainImage {
-  width: 100%;
+  padding: 0 10%;
   display: flex;
+  margin: 5% auto;
   justify-content: space-between;
 }
 .mainImage > img {
   width: 20%;
-  margin: 20px auto;
   border: 2px #ffffff solid;
   border-radius: 200px;
 }
 
 #reference {
-  margin-bottom: 5%;
+  padding: 0 10% 5% 0;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
@@ -143,18 +130,14 @@ header > hr {
 }
 
 .section2 {
-  display: flex;
-  float: left;
-  width: 100%;
-  margin: 0 auto;
   background-color: #73b46e;
+  padding: var(--wrap-padding);
 }
 
 #backgroundCanvas2 {
   display: flex;
-  width: 90%;
-  margin: 15% auto;
-  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .paragraph2 {
@@ -183,7 +166,7 @@ header > hr {
 #fourthParagraph {
   font-size: 1rem;
   text-align: left;
-  padding-left: 5%;
+  margin: 5% 0 0 5%;
 }
 
 .section2 > div > img {
@@ -193,32 +176,33 @@ header > hr {
 
 .section3 {
   background-color: #b9b6b6;
-  float: left;
-  width: 100%;
-  margin: 0 auto;
 }
 
 #left_arrow {
   position: absolute;
-  width: 3%;
-  margin-top: 50%;
+  width: var(--section3-arrow-width);
+  margin-top: 30%;
 }
 
 #right_arrow {
   position: absolute;
   width: 3%;
-  margin-top: 50%;
-  margin-left: 87%;
+  margin-top: 30%;
+  margin-left: calc(100% - var(--section3-arrow-width));
+}
+
+.section3-1 {
+  padding: var(--wrap-padding);
 }
 
 #backgroundSection3-1 {
-  background-color: #b9b6b6;
   display: flex;
+  margin: 0 auto;
+  background-color: #b9b6b6;
 }
 
 .section3-1-side {
   width: 50%;
-  margin: 15% auto;
 }
 
 #loveEarthImg {
@@ -235,7 +219,7 @@ header > hr {
 
 #qusetion3-1 {
   position: absolute;
-  margin: 20% 0 0 30%;
+  margin-left: 30%;
   line-height: 70px;
   font-size: 50px;
   font-weight: bold;
@@ -243,7 +227,7 @@ header > hr {
 
 .section3-1-main {
   width: 50%;
-  margin: 40% 10% 0 auto;
+  margin: 20% 0 0 auto;
 }
 
 #answer3-1 {
@@ -265,41 +249,41 @@ header > hr {
   text-align: right;
 }
 
+.section3-2 {
+  padding: 15% 0 10% 0;
+}
+
 #backgroundSection3-2 {
-  padding-top: 15%;
-  padding-bottom: 10%;
   background-color: #dbc5c3;
 }
 
 #backgroundCanvas3-2 {
-  margin-top: 10%;
-  padding-bottom: 10%;
   background-color: #e28b84;
 }
 
 .section3-2-upper {
   display: flex;
+  justify-content: center;
+  padding: 0 10%;
 }
 
 .section3-2-upper-paragraph {
-  width: 50%;
-  margin: 0 auto;
+  width: 70%;
 }
 
 #answer3-2 {
-  margin-bottom: 5%;
   font-size: 36px;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 #content3-2-1 {
-  font-size: 16px;
-  margin-bottom: 5%;
+  font-size: 20px;
+  margin: 50px 0 30px 0;
 }
 
 .section3-2-upper-img {
-  width: 40%;
+  width: 30%;
 }
 
 .section3-2-down {
@@ -307,18 +291,16 @@ header > hr {
 }
 
 .section3-2-down-paragraph {
-  width: 50%;
-  margin: 0 auto;
+  width: 60%;
+  padding: 2% 15%;
 }
 
 .section3-2-down-img {
-  margin: 5% 0 10% 5%;
   width: 30%;
 }
 
 #content3-2-2 {
-  margin: 5% 5%;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
   line-height: 28px;
@@ -326,7 +308,8 @@ header > hr {
 }
 
 #content3-2-3 {
-  font-size: 16px;
+  margin-top: 5%;
+  font-size: 20px;
 }
 
 .section3-2 img {
@@ -336,16 +319,17 @@ header > hr {
 
 #pig1,
 #pig2 {
-  left: 60%;
-  width: 20%;
-  height: 40%;
+  margin-left: 3%;
+  width: 300px;
+  height: 300px;
 }
 
 #cow1,
 #cow2 {
-  left: 10%;
-  width: 20%;
-  height: 40%;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 350px;
+  height: 350px;
 }
 
 #pig1,
@@ -364,9 +348,12 @@ header > hr {
   transition: all 1s;
 }
 
+.section3-3 {
+  padding: var(--wrap-padding);
+}
+
 #backgroundSection3-3 {
   background-color: #66bec8;
-  padding-top: 20%;
 }
 
 #answer3-3 {
@@ -382,7 +369,6 @@ header > hr {
   grid-template-rows: auto auto;
   row-gap: 5%;
   column-gap: 10%;
-  padding-bottom: 10%;
 }
 
 #backgroundCanvas3-3-1 {
@@ -403,52 +389,46 @@ header > hr {
 
 .section3-3-backgroundCanvas {
   border: #000000 2px solid;
-  padding: 10%;
-  width: 90%;
-  height: auto;
 }
 
 .content3-3 {
+  margin: 10% 5%;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
 
 .section4 {
-  float: left;
-  width: 100%;
   background-color: #dbbf65;
   display: flex;
-  padding: 10% 0 5% 0;
+  padding: var(--wrap-padding);
 }
 
 #since {
-  width: 60%;
-  font-size: 16rem;
-  line-height: 400px;
+  width: 70%;
+  font-size: 15rem;
+  line-height: 350px;
   color: #ff6737;
   opacity: 70%;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  margin-left: 5%;
 }
 
 .section4-container {
-  width: 40%;
+  width: 30%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
+  align-items: flex-end;
 }
 
 .history {
-  display: flex;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
 .history-canvas {
   background-color: rgba(255, 255, 255, 0.7);
-  margin: 10%;
 }
 
 #history_icon {
@@ -461,18 +441,15 @@ header > hr {
 }
 
 #KIM-salad-logo1 {
-  width: 70%;
+  width: 80%;
   grid-row: 2/3;
   grid-column: 1/2;
-  align-self: flex-end;
-  justify-self: end;
 }
 
 #KIM-salad-logo2 {
-  width: 80%;
+  width: 100%;
   grid-row: 2/3;
   grid-column: 2/3;
-  justify-self: center;
 }
 
 .history-canvas p {
