@@ -30,6 +30,8 @@ function rightSlide() {
     getComputedStyle(section3Background).backgroundColor;
 
   i++;
+
+  scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
 function leftSlide() {
@@ -47,6 +49,8 @@ function leftSlide() {
   } else {
     i--;
   }
+
+  scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
 rigthArrow.addEventListener("click", rightSlide);
@@ -75,16 +79,14 @@ function handleScroll() {
 
 document.addEventListener("scroll", handleScroll);
 
-function displayHeaderMenu() {
-  detailMenuPage.classList.remove("hide-element");
-}
-
-function hideHeaderMenu() {
-  detailMenuPage.classList.add("hide-element");
+function handleDetailMenu() {
+  if (detailMenuPage.classList.contains("hide-element")) {
+    detailMenuPage.classList.remove("hide-element");
+  } else {
+    detailMenuPage.classList.add("hide-element");
+  }
 }
 
 headerMenuItem.forEach((item) => {
-  item.addEventListener("mouseenter", displayHeaderMenu);
+  item.addEventListener("click", handleDetailMenu);
 });
-
-detailMenuPage.addEventListener("mouseleave", hideHeaderMenu);
