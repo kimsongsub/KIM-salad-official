@@ -2,6 +2,7 @@
 const MAX_PAGE_NUMBER = 2999;
 
 const headerBackground = document.querySelector(".header-background");
+const headerMenuItem = document.querySelectorAll(".header__menu li");
 const section1 = document.querySelector(".section1");
 const section2 = document.querySelector(".section2");
 const section3 = document.querySelector(".section3");
@@ -9,6 +10,7 @@ const section4 = document.querySelector(".section4");
 const section3_1 = document.getElementsByClassName("section3-1")[0];
 const section3_2 = document.getElementsByClassName("section3-2")[0];
 const section3_3 = document.getElementsByClassName("section3-3")[0];
+const detailMenuPage = document.querySelector(".detail-menu-page");
 
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
@@ -72,3 +74,17 @@ function handleScroll() {
 }
 
 document.addEventListener("scroll", handleScroll);
+
+function displayHeaderMenu() {
+  detailMenuPage.classList.remove("hide-element");
+}
+
+function hideHeaderMenu() {
+  detailMenuPage.classList.add("hide-element");
+}
+
+headerMenuItem.forEach((item) => {
+  item.addEventListener("mouseenter", displayHeaderMenu);
+});
+
+detailMenuPage.addEventListener("mouseleave", hideHeaderMenu);
