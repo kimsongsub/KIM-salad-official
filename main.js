@@ -10,6 +10,7 @@ const section4 = document.querySelector(".section4");
 const section3_1 = document.getElementsByClassName("section3-1")[0];
 const section3_2 = document.getElementsByClassName("section3-2")[0];
 const section3_3 = document.getElementsByClassName("section3-3")[0];
+const wrapDetailPage = document.querySelector(".wrap-detail-page");
 const detailMenuPage = document.querySelector(".detail-menu-page");
 
 const rigthArrow = document.querySelector("#right_arrow");
@@ -28,6 +29,8 @@ function rightSlide() {
     getComputedStyle(section3Background).backgroundColor;
   headerBackground.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
+  detailMenuPage.style.backgroundColor =
+    getComputedStyle(section3Background).backgroundColor;
 
   i++;
 
@@ -42,6 +45,8 @@ function leftSlide() {
   section3.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
   headerBackground.style.backgroundColor =
+    getComputedStyle(section3Background).backgroundColor;
+  detailMenuPage.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
 
   if (i == 0) {
@@ -71,19 +76,22 @@ function findScrollInSectionNumber() {
   }
 }
 
-function handleScroll() {
+function handleBackgroundColor() {
   headerBackground.style.backgroundColor = getComputedStyle(
+    findScrollInSectionNumber()
+  ).backgroundColor;
+  detailMenuPage.style.backgroundColor = getComputedStyle(
     findScrollInSectionNumber()
   ).backgroundColor;
 }
 
-document.addEventListener("scroll", handleScroll);
+document.addEventListener("scroll", handleBackgroundColor);
 
 function handleDetailMenu() {
-  if (detailMenuPage.classList.contains("hide-element")) {
-    detailMenuPage.classList.remove("hide-element");
+  if (wrapDetailPage.classList.contains("hide-element")) {
+    wrapDetailPage.classList.remove("hide-element");
   } else {
-    detailMenuPage.classList.add("hide-element");
+    wrapDetailPage.classList.add("hide-element");
   }
 }
 
