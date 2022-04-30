@@ -20,10 +20,6 @@ p {
   letter-spacing: 1px;
 }
 
-hr {
-  border: 0;
-}
-
 body {
   width: var(--full-width);
   margin: 0 auto;
@@ -36,7 +32,7 @@ header .header-background {
   grid-template-columns: 3fr 7fr;
   justify-items: center;
   position: fixed;
-  width: 100%;
+  width: var(--full-width);
   padding: 27px 0;
   font-weight: bold;
   z-index: 10;
@@ -72,7 +68,7 @@ header .header-background .header-menu :hover {
   align-items: center;
   position: fixed;
   margin-top: 110px;
-  width: 100%;
+  width: var(--full-width);
   height: 40%;
   z-index: 10;
   background-color: #e6de6e;

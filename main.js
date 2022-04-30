@@ -1,5 +1,5 @@
 "use strict";
-const MAX_PAGE_NUMBER = 2999;
+const MAX_PAGE_NUMBER = 29999;
 
 const headerBackground = document.querySelector(".header-background");
 const headerMenuItem = document.querySelectorAll(".header-menu li");
