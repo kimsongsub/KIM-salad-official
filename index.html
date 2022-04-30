@@ -36,9 +36,9 @@
     <div class="detail-menu-page hide-element"></div>
 
     <!-- section1 -->
-    <section class="section1">
+    <div class="section1">
       <div class="mainInfo">
-        <video controls autoplay src="videos/main.mp4" loop="true"></video>
+        <video controls autoplay loop src="videos/main.mp4"></video>
         <div class="paragraph1">
           <p id="firstParagraph">
             "KIM-salad" 는 혼자 만들어 먹기엔 많이 남게되는<br />
@@ -58,17 +58,17 @@
       </div>
 
       <div class="mainImage">
-        <img src="images/dish1.png" />
-        <img src="images/dish2.png" />
-        <img src="images/dish3.png" />
-        <img src="images/dish4.png" />
+        <img alt="dish1" src="images/dish1.png" />
+        <img alt="dish2" src="images/dish2.png" />
+        <img alt="dish3" src="images/dish3.png" />
+        <img alt="dish4" src="images/dish4.png" />
       </div>
 
       <p id="reference">* 위 이미지들은 실제 판매 되었던 샐러드 사진입니다.</p>
-    </section>
+    </div>
 
     <!-- section2 -->
-    <section class="section2">
+    <div class="section2">
       <div id="backgroundCanvas2">
         <div class="paragraph2">
           <p id="thirdParagraph">DAILY NEW SALAD FOR 5$</p>
@@ -81,18 +81,19 @@
             <li>🍏 Use of EXTRA VIRGIN OIL</li>
           </ul>
         </div>
-        <img src="images/section2_img.jpg" />
+        <img alt="section2_img" src="images/section2_img.jpg" />
       </div>
-    </section>
+    </div>
 
     <!-- section3 -->
-    <section class="section3">
-      <img id="left_arrow" src="images/left-arrow.png" />
-      <img id="right_arrow" src="images/right-arrow.png" />
-      <section class="section3-1">
+    <div class="section3">
+      <img id="left_arrow" alt="left-arrow" src="images/left-arrow.png" />
+      <img id="right_arrow" alt="right-arrow" src="images/right-arrow.png" />
+      <div class="section3-1">
         <div id="backgroundSection3-1">
           <div class="section3-1-side">
             <img
+              alt="loveEarthImg"
               id="loveEarthImg"
               src="images/istockphoto-1199585563-170667a.jpg"
             />
@@ -108,13 +109,17 @@
           <p id="qusetion3-1">Why we should eat salad ?!</p>
           <div class="section3-1-main">
             <p id="answer3-1">1. Greenhouse gas emissions</p>
-            <img id="cowandcar" src="images/comparecarwithcow.png" />
+            <img
+              id="cowandcar"
+              alt="cowandcar"
+              src="images/comparecarwithcow.png"
+            />
             <p id="Content3-1-2">a Cow = 10 years of driving</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section3-2 hide-element">
+      <div class="section3-2 hide-element">
         <div id="backgroundSection3-2">
           <div class="section3-2-upper">
             <div class="section3-2-upper-paragraph">
@@ -134,16 +139,16 @@
               </p>
             </div>
             <div class="section3-2-upper-img">
-              <img id="pig1" src="images/pig1.jpg" />
-              <img id="pig2" src="images/pig2.jpg" />
+              <img id="pig1" alt="pig1" src="images/pig1.jpg" />
+              <img id="pig2" alt="pig2" src="images/pig2.jpg" />
             </div>
           </div>
 
           <div id="backgroundCanvas3-2">
             <div class="section3-2-down">
               <div class="section3-2-down-img">
-                <img id="cow1" src="images/cow1.jpg" />
-                <img id="cow2" src="images/cow2.jpg" />
+                <img id="cow1" alt="cow1" src="images/cow1.jpg" />
+                <img id="cow2" alt="cow2" src="images/cow2.jpg" />
               </div>
               <div class="section3-2-down-paragraph">
                 <p id="content3-2-2">
@@ -165,9 +170,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section3-3 hide-element">
+      <div class="section3-3 hide-element">
         <div id="backgroundSection3-3">
           <p id="answer3-3">3. Our Health</p>
           <div class="section3-3-grid-container">
@@ -211,16 +216,20 @@
             </div>
           </div>
         </div>
-      </section>
-    </section>
+      </div>
+    </div>
 
     <!-- section4 -->
-    <section class="section4">
+    <div class="section4">
       <p id="since">Since<br />2021</p>
       <div class="section4-container">
         <div class="history">
           <div class="history-canvas">
-            <img id="history_icon" src="images/history_icon.png" />
+            <img
+              id="history_icon"
+              alt="history_icon"
+              src="images/history_icon.png"
+            />
             <ul>
               <li>
                 <p>2021.06.12<br />- KIM-salad Website OPEN</p>
@@ -237,15 +246,17 @@
         <img
           class="KIM-salad-logo"
           id="KIM-salad-logo1"
+          alt="profile2"
           src="images/profile2.jpg"
         />
         <img
           class="KIM-salad-logo"
           id="KIM-salad-logo2"
+          alt="profile"
           src="images/profile.jpg"
         />
       </div>
-    </section>
+    </div>
     <script src="main.js" defer></script>
   </body>
 </html>
