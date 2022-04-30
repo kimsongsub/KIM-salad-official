@@ -97,6 +97,9 @@ header .header-background .header-menu :hover {
   grid-column: 3/4;
   grid-row: 3/4;
 }
+.wrap-detail-page .detail-menu-page .inner-detail-page a {
+  font-weight: bold;
+}
 
 .section1 {
   background-color: #e6de6e;
