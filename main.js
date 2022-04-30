@@ -2,7 +2,7 @@
 const MAX_PAGE_NUMBER = 2999;
 
 const headerBackground = document.querySelector(".header-background");
-const headerMenuItem = document.querySelectorAll(".header__menu li");
+const headerMenuItem = document.querySelectorAll(".header-menu li");
 const section1 = document.querySelector(".section1");
 const section2 = document.querySelector(".section2");
 const section3 = document.querySelector(".section3");

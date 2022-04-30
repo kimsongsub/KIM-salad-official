@@ -30,79 +30,72 @@ body {
 }
 
 /* header */
-header nav {
+header .header-background {
   background-color: #e6de6e;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  justify-items: center;
   position: fixed;
-  width: 80%;
-  padding: 27px 10%;
+  width: 100%;
+  padding: 27px 0;
   font-weight: bold;
   z-index: 10;
-  justify-content: space-between;
+  border-bottom: solid #000000 3px;
 }
-header hr {
-  position: fixed;
-  width: var(--full-width);
-  background-color: black;
-  margin-top: 110px;
-  height: 3px;
-  z-index: 10;
-}
-
-#KIM-salad {
-  margin-top: 12px;
-}
-
-.header__logo {
+header .header-background .header-logo {
   display: flex;
-  width: 20%;
+  align-items: center;
+  margin-left: 30%;
+  width: 60%;
 }
-.header__logo img {
+header .header-background .header-logo img {
   width: 3rem;
   height: auto;
 }
-
-.header__menu {
+header .header-background .header-menu {
   width: 70%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   list-style: none;
   font-size: 22px;
 }
-.header__menu > li {
-  margin: 10px auto;
-}
-.header__menu :hover {
+header .header-background .header-menu :hover {
   cursor: pointer;
 }
 
-.detail-menu-page {
-  display: flex;
-  background-color: #e6de6e;
+.wrap-detail-page .detail-menu-page {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  justify-items: center;
+  align-items: center;
   position: fixed;
-  margin-top: 113px;
+  margin-top: 110px;
   width: 100%;
-  height: 300px;
+  height: 40%;
   z-index: 10;
+  background-color: #e6de6e;
+  border-bottom: solid #000000 3px;
 }
-.detail-menu-page > img {
-  width: 30%;
+.wrap-detail-page .detail-menu-page img {
+  margin-left: 10%;
+  width: 80%;
   height: auto;
-  margin-right: 5%;
 }
-.detail-menu-page > hr {
-  position: fixed;
-  width: var(--full-width);
-  background-color: black;
-  margin-top: 300px;
-  height: 3px;
-  z-index: 10;
-}
-
-.inner-detail-page {
+.wrap-detail-page .detail-menu-page .inner-detail-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 55%;
-  margin: 20px 0;
-  height: 250px;
+  width: 70%;
+  height: 80%;
+}
+.wrap-detail-page .detail-menu-page .inner-detail-page :nth-child(8) {
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 .section1 {
