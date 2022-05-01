@@ -9,6 +9,10 @@
   display: none;
 }
 
+.unvisible {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -61,6 +65,10 @@ header .header-background .header-menu :hover {
   cursor: pointer;
 }
 
+.wrap-detail-page {
+  transition: all 1s;
+  opacity: 0;
+}
 .wrap-detail-page .detail-menu-page {
   display: grid;
   grid-template-columns: 3fr 7fr;

@@ -88,10 +88,12 @@ function handleBackgroundColor() {
 document.addEventListener("scroll", handleBackgroundColor);
 
 function handleDetailMenu() {
-  if (wrapDetailPage.classList.contains("hide-element")) {
-    wrapDetailPage.classList.remove("hide-element");
+  if (wrapDetailPage.classList.contains("unvisible")) {
+    wrapDetailPage.classList.remove("unvisible");
+    wrapDetailPage.style.opacity = 1;
   } else {
-    wrapDetailPage.classList.add("hide-element");
+    wrapDetailPage.classList.add("unvisible");
+    wrapDetailPage.style.opacity = 0;
   }
 }
 
