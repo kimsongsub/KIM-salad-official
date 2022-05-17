@@ -20,9 +20,9 @@ const loading = document.querySelector(".loading");
 
 let i = 0;
 
-window.onload = function () {
-  loading.classList.add("hide-element");
-};
+// window.onload = function () {
+//   loading.classList.add("hide-element");
+// };
 
 window.onbeforeunload = function () {
   loading.classList.remove("hide-element");

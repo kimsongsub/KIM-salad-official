@@ -30,15 +30,41 @@ body {
 }
 
 .loading {
+  display: flex;
   width: 100%;
   height: 100%;
   position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
   left: 0px;
   top: 0px;
   background: #fff;
   z-index: 1000;
 }
 
+.dot span {
+  animation: dotting 1.2s infinite;
+}
+
+.dot :nth-child(1) {
+  animation-delay: 0s;
+}
+.dot :nth-child(2) {
+  animation-delay: 0.4s;
+}
+.dot :nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes dotting {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 /* header */
 header .header-background {
   background-color: #e6de6e;
