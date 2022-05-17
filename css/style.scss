@@ -133,7 +133,7 @@ header {
 
 .section1 {
   background-color: #e6de6e;
-  padding-top: 110px;
+  padding: 110px 0;
 }
 
 .mainInfo {
@@ -181,14 +181,6 @@ header {
     border: 2px #ffffff solid;
     border-radius: 200px;
   }
-}
-
-#reference {
-  padding: 0 10% 5% 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: right;
 }
 
 .section2 {
@@ -245,13 +237,14 @@ header {
   position: absolute;
   width: var(--section3-arrow-width);
   margin-top: 30%;
+  margin-left: 3%;
 }
 
 #right_arrow {
   position: absolute;
   width: 3%;
   margin-top: 30%;
-  margin-left: calc(100% - var(--section3-arrow-width));
+  margin-left: calc(100% - var(--section3-arrow-width) - 3%);
 }
 
 .section3-1 {

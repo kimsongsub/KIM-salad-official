@@ -58,6 +58,9 @@ header .header-background .header-logo {
   margin-left: 30%;
   width: 60%;
 }
+header .header-background .header-logo :hover {
+  cursor: pointer;
+}
 header .header-background .header-logo img {
   width: 3rem;
   height: auto;
@@ -116,7 +119,7 @@ header .header-background .header-menu :hover {
 
 .section1 {
   background-color: #e6de6e;
-  padding-top: 110px;
+  padding: 110px 0;
 }
 
 .mainInfo {
@@ -162,14 +165,6 @@ header .header-background .header-menu :hover {
   width: 20%;
   border: 2px #ffffff solid;
   border-radius: 200px;
-}
-
-#reference {
-  padding: 0 10% 5% 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: right;
 }
 
 .section2 {
@@ -226,13 +221,14 @@ header .header-background .header-menu :hover {
   position: absolute;
   width: var(--section3-arrow-width);
   margin-top: 30%;
+  margin-left: 3%;
 }
 
 #right_arrow {
   position: absolute;
   width: 3%;
   margin-top: 30%;
-  margin-left: calc(100% - var(--section3-arrow-width));
+  margin-left: calc(100% - var(--section3-arrow-width) - 3%);
 }
 
 .section3-1 {
