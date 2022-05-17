@@ -12,13 +12,20 @@ const section3_2 = document.getElementsByClassName("section3-2")[0];
 const section3_3 = document.getElementsByClassName("section3-3")[0];
 const wrapDetailPage = document.querySelector(".wrap-detail-page");
 const detailMenuPage = document.querySelector(".detail-menu-page");
-
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
-
 const section3Array = [section3_1, section3_2, section3_3];
+const loading = document.querySelector(".loading");
 
 let i = 0;
+
+window.onload = function () {
+  loading.classList.add("hide-element");
+};
+
+window.onbeforeunload = function () {
+  loading.classList.remove("hide-element");
+};
 
 function rightSlide() {
   section3Array[i % 3].classList.add("hide-element");

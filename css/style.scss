@@ -30,6 +30,16 @@ body {
   margin: 0 auto;
 }
 
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  z-index: 1000;
+}
+
 /* header */
 
 header {
