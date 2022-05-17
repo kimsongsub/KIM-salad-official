@@ -3,6 +3,7 @@ const MAX_PAGE_NUMBER = 29999;
 
 const headerBackground = document.querySelector(".header-background");
 const headerMenuItem = document.querySelectorAll(".header-menu li");
+const headerLogo = document.querySelector(".header-logo");
 const section1 = document.querySelector(".section1");
 const section2 = document.querySelector(".section2");
 const section3 = document.querySelector(".section3");
@@ -106,4 +107,8 @@ function handleDetailMenu() {
 
 headerMenuItem.forEach((item) => {
   item.addEventListener("click", handleDetailMenu);
+});
+
+headerLogo.addEventListener("click", function () {
+  location.href = "http://127.0.0.1:5500/index.html";
 });

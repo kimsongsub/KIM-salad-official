@@ -61,6 +61,10 @@ header {
       margin-left: 30%;
       width: 60%;
 
+      :hover {
+        cursor: pointer;
+      }
+
       img {
         width: 3rem;
         height: auto;
