@@ -16,13 +16,13 @@ const detailMenuPage = document.querySelector(".detail-menu-page");
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
 const section3Array = [section3_1, section3_2, section3_3];
-const loading = document.querySelector(".loading");
+const loading = document.querySelector(".wrap-loading");
 
 let i = 0;
 
-// window.onload = function () {
-//   loading.classList.add("hide-element");
-// };
+window.onload = function () {
+  loading.classList.add("hide-element");
+};
 
 window.onbeforeunload = function () {
   loading.classList.remove("hide-element");
