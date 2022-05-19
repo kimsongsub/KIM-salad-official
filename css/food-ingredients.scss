@@ -1,0 +1,11 @@
+@import url(style.css);
+
+.wrap-food-ingredients {
+  background-color: #fff2f2;
+  padding: var(--wrap-padding);
+
+  > span {
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
