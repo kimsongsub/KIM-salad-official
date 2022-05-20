@@ -2,8 +2,6 @@
 const MAX_PAGE_NUMBER = 29999;
 
 const headerBackground = document.querySelector(".header-background");
-const headerMenuItem = document.querySelectorAll(".header-menu li");
-const headerLogo = document.querySelector(".header-logo");
 const section1 = document.querySelector(".section1");
 const section2 = document.querySelector(".section2");
 const section3 = document.querySelector(".section3");
@@ -11,12 +9,9 @@ const section4 = document.querySelector(".section4");
 const section3_1 = document.getElementsByClassName("section3-1")[0];
 const section3_2 = document.getElementsByClassName("section3-2")[0];
 const section3_3 = document.getElementsByClassName("section3-3")[0];
-const wrapDetailPage = document.querySelector(".wrap-detail-page");
-const detailMenuPage = document.querySelector(".detail-menu-page");
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
 const section3Array = [section3_1, section3_2, section3_3];
-const loading = document.querySelector(".wrap-loading");
 
 let i = 0;
 
@@ -95,20 +90,3 @@ function handleBackgroundColor() {
 
 document.addEventListener("scroll", handleBackgroundColor);
 
-function handleDetailMenu() {
-  if (wrapDetailPage.classList.contains("unvisible")) {
-    wrapDetailPage.classList.remove("unvisible");
-    wrapDetailPage.style.opacity = 1;
-  } else {
-    wrapDetailPage.classList.add("unvisible");
-    wrapDetailPage.style.opacity = 0;
-  }
-}
-
-headerMenuItem.forEach((item) => {
-  item.addEventListener("click", handleDetailMenu);
-});
-
-headerLogo.addEventListener("click", function () {
-  location.href = "http://127.0.0.1:5500/index.html";
-});
