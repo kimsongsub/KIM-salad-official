@@ -53,9 +53,6 @@ function leftSlide() {
   scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
-rigthArrow.addEventListener("click", rightSlide);
-leftArrow.addEventListener("click", leftSlide);
-
 function findScrollInSectionNumber() {
   if (window.scrollY < section1.clientHeight) {
     return section1;
@@ -82,3 +79,5 @@ function handleBackgroundColor() {
 
 document.addEventListener("scroll", handleBackgroundColor);
 
+rigthArrow.addEventListener("click", rightSlide);
+leftArrow.addEventListener("click", leftSlide);
