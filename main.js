@@ -15,14 +15,6 @@ const section3Array = [section3_1, section3_2, section3_3];
 
 let i = 0;
 
-window.onload = function () {
-  loading.classList.add("hide-element");
-};
-
-window.onbeforeunload = function () {
-  loading.classList.remove("hide-element");
-};
-
 function rightSlide() {
   section3Array[i % 3].classList.add("hide-element");
   section3Array[(i + 1) % 3].classList.remove("hide-element");
