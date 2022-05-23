@@ -53,6 +53,28 @@ function leftSlide() {
   scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
+rigthArrow.addEventListener("click", rightSlide);
+leftArrow.addEventListener("click", leftSlide);
+
+const wrapDetailPage = document.querySelector(".wrap-detail-page");
+const detailMenuPage = document.querySelector(".detail-menu-page");
+const headerMenuItem = document.querySelectorAll(".header-menu li");
+const foodIngredients = document.querySelector("#food-ingredients");
+
+function handleDetailMenu() {
+  if (wrapDetailPage.classList.contains("unvisible")) {
+    wrapDetailPage.classList.remove("unvisible");
+    wrapDetailPage.style.opacity = 1;
+  } else {
+    wrapDetailPage.classList.add("unvisible");
+    wrapDetailPage.style.opacity = 0;
+  }
+}
+
+headerMenuItem.forEach((item) => {
+  item.addEventListener("click", handleDetailMenu);
+});
+
 function findScrollInSectionNumber() {
   if (window.scrollY < section1.clientHeight) {
     return section1;
@@ -78,6 +100,3 @@ function handleBackgroundColor() {
 }
 
 document.addEventListener("scroll", handleBackgroundColor);
-
-rigthArrow.addEventListener("click", rightSlide);
-leftArrow.addEventListener("click", leftSlide);
