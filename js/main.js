@@ -1,5 +1,7 @@
-"use strict";
+export { addEvent, aa };
+
 const MAX_PAGE_NUMBER = 29999;
+let i = 0;
 
 const headerBackground = document.querySelector(".header-background");
 const section1 = document.querySelector(".section1");
@@ -12,8 +14,6 @@ const section3_3 = document.getElementsByClassName("section3-3")[0];
 const rigthArrow = document.querySelector("#right_arrow");
 const leftArrow = document.querySelector("#left_arrow");
 const section3Array = [section3_1, section3_2, section3_3];
-
-let i = 0;
 
 function rightSlide() {
   section3Array[i % 3].classList.add("hide-element");
@@ -53,13 +53,9 @@ function leftSlide() {
   scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
-rigthArrow.addEventListener("click", rightSlide);
-leftArrow.addEventListener("click", leftSlide);
-
 const wrapDetailPage = document.querySelector(".wrap-detail-page");
 const detailMenuPage = document.querySelector(".detail-menu-page");
 const headerMenuItem = document.querySelectorAll(".header-menu li");
-const foodIngredients = document.querySelector("#food-ingredients");
 
 function handleDetailMenu() {
   if (wrapDetailPage.classList.contains("unvisible")) {
@@ -70,10 +66,6 @@ function handleDetailMenu() {
     wrapDetailPage.style.opacity = 0;
   }
 }
-
-headerMenuItem.forEach((item) => {
-  item.addEventListener("click", handleDetailMenu);
-});
 
 function findScrollInSectionNumber() {
   if (window.scrollY < section1.clientHeight) {
@@ -99,4 +91,18 @@ function handleBackgroundColor() {
   ).backgroundColor;
 }
 
-document.addEventListener("scroll", handleBackgroundColor);
+function addEvent() {
+  headerMenuItem.forEach((item) => {
+    item.addEventListener("click", handleDetailMenu);
+  });
+
+  rigthArrow.addEventListener("click", rightSlide);
+  leftArrow.addEventListener("click", leftSlide);
+
+  document.addEventListener("scroll", handleBackgroundColor);
+}
+
+function aa() {
+  section1.style.backgroundColor = "black";
+  console.log("AAA");
+}
