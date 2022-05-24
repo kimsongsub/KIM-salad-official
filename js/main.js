@@ -1,6 +1,7 @@
-export { addEvent, aa };
+"use strict";
 
 const MAX_PAGE_NUMBER = 29999;
+
 let i = 0;
 
 const headerBackground = document.querySelector(".header-background");
@@ -91,18 +92,11 @@ function handleBackgroundColor() {
   ).backgroundColor;
 }
 
-function addEvent() {
-  headerMenuItem.forEach((item) => {
-    item.addEventListener("click", handleDetailMenu);
-  });
+headerMenuItem.forEach((item) => {
+  item.addEventListener("click", handleDetailMenu);
+});
 
-  rigthArrow.addEventListener("click", rightSlide);
-  leftArrow.addEventListener("click", leftSlide);
+rigthArrow.addEventListener("click", rightSlide);
+leftArrow.addEventListener("click", leftSlide);
 
-  document.addEventListener("scroll", handleBackgroundColor);
-}
-
-function aa() {
-  section1.style.backgroundColor = "black";
-  console.log("AAA");
-}
+document.addEventListener("scroll", handleBackgroundColor);
