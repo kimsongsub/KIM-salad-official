@@ -21,6 +21,10 @@ const handleLocation = async () => {
   document.getElementById("main-page").innerHTML = html;
   dynamicImportCSS(path);
   dynamicImportJS(path);
+  const lastScript = document.querySelectorAll("script")[2];
+  if (temp === 2) {
+    lastScript.remove();
+  }
 };
 
 window.onpopstate = handleLocation;
@@ -28,13 +32,13 @@ window.route = route;
 
 handleLocation();
 
-const importedCSS = [];
 const importedJS = ["undefined"];
+const importedCSS = [];
 
 function dynamicImportJS(path) {
   let jsFilePath = "undefined";
   if (path === "/" || path === "/index.html") {
-    jsFilePath = "/js/main.js";
+    jsFilePath = `/js/main.js`;
   }
 
   if (!importedJS.includes(jsFilePath)) {
