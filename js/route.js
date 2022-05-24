@@ -1,3 +1,5 @@
+"use strict";
+
 const route = (event) => {
   event = event || window.event;
   event.preventDefault();
@@ -8,6 +10,7 @@ const route = (event) => {
 const routes = {
   404: "/page/404.html",
   "/": "/page/main.html",
+  "/index.html": "/page/main.html",
   "/food-ingredients": "/page/food-ingredients.html",
 };
 
@@ -26,23 +29,27 @@ window.route = route;
 handleLocation();
 
 const importedCSS = [];
+const importedJS = ["undefined"];
 
-async function dynamicImportJS(path) {
-  let jsFilePath;
-
-  if (path === "/") {
+function dynamicImportJS(path) {
+  let jsFilePath = "undefined";
+  if (path === "/" || path === "/index.html") {
     jsFilePath = "/js/main.js";
-    let mainFile = await import(jsFilePath);
-    mainFile.addEvent();
-    mainFile.aa();
-  } else if (path === "/food-ingredients") {
-    jsFilePath = "/js/food-ingredients.js";
+  }
+
+  if (!importedJS.includes(jsFilePath)) {
+    importedJS.push(jsFilePath);
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = jsFilePath;
+    const body = document.querySelector("body");
+    body.appendChild(script);
   }
 }
 
 function dynamicImportCSS(path) {
   let cssFilePath;
-  if (path === "/") {
+  if (path === "/" || path === "/index.html") {
     cssFilePath = "/css/style.css";
   } else if (path === "/food-ingredients") {
     cssFilePath = "/css/food-ingredients.css";
@@ -54,7 +61,7 @@ function dynamicImportCSS(path) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = cssFilePath;
-    head = document.querySelector("head");
+    const head = document.querySelector("head");
     head.appendChild(link);
   }
 }
