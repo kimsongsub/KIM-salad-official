@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(/css/reset.css);
 :root {
   --full-width: 100%;
   --section3-arrow-width: 3%;
