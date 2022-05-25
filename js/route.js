@@ -19,7 +19,7 @@ const handleLocation = async () => {
   const route = routes[path] || routes[404];
   const html = await fetch(route).then((data) => data.text());
   document.getElementById("main-page").innerHTML = html;
-  dynamicImportCSS(path);
+  // dynamicImportCSS(path);
   dynamicImportJS(path);
 };
 
@@ -28,44 +28,32 @@ window.route = route;
 
 handleLocation();
 
-const importedJS = ["undefined"];
-const importedCSS = [];
-
 async function dynamicImportJS(path) {
-  let jsFilePath = "undefined";
   if (path === "/" || path === "/index.html") {
-    jsFilePath = "/js/main.js";
-    const mainJsFile = await import(jsFilePath);
-    mainJsFile.addEvent();
+    const mainJs = await import("/js/main.js");
+    mainJs.addEvent();
   } else if (path === "/food-ingredients") {
-    jsFilePath = "/js/food-ingredients.js";
-  }
-
-  if (!importedJS.includes(jsFilePath)) {
-    importedJS.push(jsFilePath);
-    // const script = document.createElement("script");
-    // script.type = "text/javascript";
-    // script.src = jsFilePath;
-    // const body = document.querySelector("body");
-    // body.appendChild(script);
+    const foodIngredientsJs = await import("/js/food-ingredients.js");
   }
 }
 
-function dynamicImportCSS(path) {
-  let cssFilePath;
-  if (path === "/" || path === "/index.html") {
-    cssFilePath = "/css/style.css";
-  } else if (path === "/food-ingredients") {
-    cssFilePath = "/css/food-ingredients.css";
-  }
+// const importedCSS = [];
 
-  if (!importedCSS.includes(cssFilePath)) {
-    importedCSS.push(cssFilePath);
+// function dynamicImportCSS(path) {
+//   let cssFilePath;
+//   if (path === "/" || path === "/index.html") {
+//     cssFilePath = "/css/style.css";
+//   } else if (path === "/food-ingredients") {
+//     cssFilePath = "/css/food-ingredients.css";
+//   }
 
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = cssFilePath;
-    const head = document.querySelector("head");
-    head.appendChild(link);
-  }
-}
+//   if (!importedCSS.includes(cssFilePath)) {
+//     importedCSS.push(cssFilePath);
+
+//     const link = document.createElement("link");
+//     link.rel = "stylesheet";
+//     link.href = cssFilePath;
+//     const head = document.querySelector("head");
+//     head.appendChild(link);
+//   }
+// }
