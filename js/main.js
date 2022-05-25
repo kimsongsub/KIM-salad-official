@@ -63,17 +63,6 @@ function leftSlide() {
   scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
 }
 
-function handleDetailMenu() {
-  const wrapDetailPage = document.querySelector(".wrap-detail-page");
-  if (wrapDetailPage.classList.contains("unvisible")) {
-    wrapDetailPage.classList.remove("unvisible");
-    wrapDetailPage.style.opacity = 1;
-  } else {
-    wrapDetailPage.classList.add("unvisible");
-    wrapDetailPage.style.opacity = 0;
-  }
-}
-
 function findScrollInSectionNumber() {
   const section1 = document.querySelector(".section1");
   const section2 = document.querySelector(".section2");
@@ -105,13 +94,8 @@ function handleBackgroundColor() {
 }
 
 function addEvent() {
-  const headerMenuItem = document.querySelectorAll(".header-menu li");
   const rigthArrow = document.querySelector("#right_arrow");
   const leftArrow = document.querySelector("#left_arrow");
-
-  headerMenuItem.forEach((item) => {
-    item.addEventListener("click", handleDetailMenu);
-  });
 
   rigthArrow.addEventListener("click", rightSlide);
   leftArrow.addEventListener("click", leftSlide);
