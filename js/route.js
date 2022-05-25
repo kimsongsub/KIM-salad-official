@@ -20,18 +20,39 @@ const handleLocation = async () => {
   const html = await fetch(route).then((data) => data.text());
   document.getElementById("main-page").innerHTML = html;
   dynamicImportJS(path);
+  changeHeaderBackground(path);
 };
-
-window.onpopstate = handleLocation;
-window.route = route;
-
-handleLocation();
 
 async function dynamicImportJS(path) {
   if (path === "/" || path === "/index.html") {
-    const mainJs = await import("/js/main.js");
-    mainJs.addEvent();
+    await import("/js/main.js");
   } else if (path === "/food-ingredients") {
-    const foodIngredientsJs = await import("/js/food-ingredients.js");
+    await import("/js/food-ingredients.js");
   }
 }
+
+function changeHeaderBackground(path) {
+  const headerBackground = document.querySelector(".header-background");
+  const detailMenuPage = document.querySelector(".detail-menu-page");
+  if (path === "/" || path === "/index.html") {
+    headerBackground.style.backgroundColor = "#e6de6e";
+    detailMenuPage.style.backgroundColor = "#e6de6e";
+  } else if (path === "/food-ingredients") {
+    headerBackground.style.backgroundColor = "#fff2f2";
+    detailMenuPage.style.backgroundColor = "#fff2f2";
+  }
+}
+
+(function () {
+  const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
+  detailMenuItem.forEach((menuItem) => {
+    if (menuItem.target !== "_blank") {
+      menuItem.addEventListener("click", route);
+    }
+  });
+
+  window.onpopstate = handleLocation;
+  window.route = route;
+
+  handleLocation();
+})();

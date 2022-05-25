@@ -1,8 +1,15 @@
-const headerMenuItem = document.querySelectorAll(".header-menu li");
+(function () {
+  const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
+  const headerMenuItem = document.querySelectorAll(".header-menu li");
 
-headerMenuItem.forEach((item) => {
-  item.addEventListener("click", handleDetailMenu);
-});
+  detailMenuItem.forEach((menuItem) => {
+    menuItem.addEventListener("click", handleDetailMenu);
+  });
+
+  headerMenuItem.forEach((item) => {
+    item.addEventListener("click", handleDetailMenu);
+  });
+})();
 
 function handleDetailMenu() {
   const wrapDetailPage = document.querySelector(".wrap-detail-page");

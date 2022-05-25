@@ -1,7 +1,4 @@
 "use strict";
-
-export { addEvent };
-
 const MAX_PAGE_NUMBER = 29999;
 
 let i = 0;
@@ -83,8 +80,8 @@ function findScrollInSectionNumber() {
 }
 
 function handleBackgroundColor() {
-  const detailMenuPage = document.querySelector(".detail-menu-page");
   const headerBackground = document.querySelector(".header-background");
+  const detailMenuPage = document.querySelector(".detail-menu-page");
   headerBackground.style.backgroundColor = getComputedStyle(
     findScrollInSectionNumber()
   ).backgroundColor;
@@ -93,7 +90,7 @@ function handleBackgroundColor() {
   ).backgroundColor;
 }
 
-function addEvent() {
+(function () {
   const rigthArrow = document.querySelector("#right_arrow");
   const leftArrow = document.querySelector("#left_arrow");
 
@@ -101,4 +98,4 @@ function addEvent() {
   leftArrow.addEventListener("click", leftSlide);
 
   document.addEventListener("scroll", handleBackgroundColor);
-}
+})();
