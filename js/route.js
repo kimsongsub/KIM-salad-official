@@ -19,7 +19,6 @@ const handleLocation = async () => {
   const route = routes[path] || routes[404];
   const html = await fetch(route).then((data) => data.text());
   document.getElementById("main-page").innerHTML = html;
-  // dynamicImportCSS(path);
   dynamicImportJS(path);
 };
 
@@ -36,24 +35,3 @@ async function dynamicImportJS(path) {
     const foodIngredientsJs = await import("/js/food-ingredients.js");
   }
 }
-
-// const importedCSS = [];
-
-// function dynamicImportCSS(path) {
-//   let cssFilePath;
-//   if (path === "/" || path === "/index.html") {
-//     cssFilePath = "/css/style.css";
-//   } else if (path === "/food-ingredients") {
-//     cssFilePath = "/css/food-ingredients.css";
-//   }
-
-//   if (!importedCSS.includes(cssFilePath)) {
-//     importedCSS.push(cssFilePath);
-
-//     const link = document.createElement("link");
-//     link.rel = "stylesheet";
-//     link.href = cssFilePath;
-//     const head = document.querySelector("head");
-//     head.appendChild(link);
-//   }
-// }
