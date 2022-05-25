@@ -7,11 +7,13 @@ const MAX_PAGE_NUMBER = 29999;
 let i = 0;
 
 function rightSlide() {
+  const detailMenuPage = document.querySelector(".detail-menu-page");
   const headerBackground = document.querySelector(".header-background");
   const section3_1 = document.getElementsByClassName("section3-1")[0];
   const section3_2 = document.getElementsByClassName("section3-2")[0];
   const section3_3 = document.getElementsByClassName("section3-3")[0];
   const section1 = document.querySelector(".section1");
+  const section2 = document.querySelector(".section2");
   const section3 = document.querySelector(".section3");
   const section3Array = [section3_1, section3_2, section3_3];
 
@@ -32,6 +34,7 @@ function rightSlide() {
 }
 
 function leftSlide() {
+  const detailMenuPage = document.querySelector(".detail-menu-page");
   const headerBackground = document.querySelector(".header-background");
   const section3_1 = document.getElementsByClassName("section3-1")[0];
   const section3_2 = document.getElementsByClassName("section3-2")[0];
