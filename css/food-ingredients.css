@@ -1,10 +1,94 @@
 .wrap-food-ingredients {
   background-color: #fff2f2;
-  padding: var(--wrap-padding);
+  margin-top: 110px;
+  padding: 10% 10% 15% 10%;
 }
-.wrap-food-ingredients > span {
-  font-size: 28px;
+
+#fruits {
+  position: absolute;
+  top: 200px;
+  font-size: 38px;
   font-weight: bold;
+}
+
+.fruits-section1 {
+  display: flex;
+}
+
+.main-fruits-img {
+  margin-left: 100px;
+  width: 500px;
+  height: 500px;
+}
+
+.fruits-effect {
+  font-weight: bold;
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+}
+.fruits-effect > span {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(189, 82, 65, 0.5);
+}
+
+.title {
+  padding: 50px 0 0 0 !important;
+  opacity: 0.5;
+  background-color: #fff2f2 !important;
+}
+
+#table-describe {
+  margin-top: 2%;
+  opacity: 0.5;
+  text-align: end;
+}
+
+#fruits-ingredients-table {
+  font-weight: bold;
+  margin-top: 2%;
+  width: 100%;
+}
+#fruits-ingredients-table th {
+  background-color: azure;
+  border: 1px solid #444444;
+  padding: 10px;
+}
+#fruits-ingredients-table td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #444444;
+}
+#fruits-ingredients-table .ingredients-content {
+  opacity: 0.5;
+}
+
+.other-fruits {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap-other-fruits {
+  height: 200px;
+  width: 200px;
+  background-color: azure;
+  border: 2px black solid;
+  border-radius: 200px;
+}
+
+.other-fruits-img {
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 200px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=food-ingredients.css.map */
