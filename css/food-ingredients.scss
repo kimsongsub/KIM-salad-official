@@ -11,8 +11,20 @@
   font-weight: bold;
 }
 
+#Vegitables {
+  position: absolute;
+  top: 1600px;
+  font-size: 38px;
+  font-weight: bold;
+}
+
 .fruits-section1 {
   display: flex;
+}
+
+.Vegitables-section1 {
+  display: flex;
+  margin-top: 30%;
 }
 
 .main-fruits-img {
@@ -36,7 +48,7 @@
     padding: 30px 0 30px 0;
     text-align: center;
     width: 100%;
-    background-color: rgba(189, 82, 65, 50%);
+    background-color: #74a867;
   }
 }
 
