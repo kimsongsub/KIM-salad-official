@@ -28,7 +28,6 @@
 }
 
 .main-fruits-img {
-  margin-left: 100px;
   width: 500px;
   height: 500px;
 }
@@ -85,13 +84,13 @@
   }
 }
 
-.other-fruits {
+.wrap-other-foods {
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
 }
 
-.wrap-other-fruits {
+.other-foods {
   height: 200px;
   width: 200px;
   background-color: azure;
