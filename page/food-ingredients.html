@@ -14,19 +14,20 @@
         <div id="fruits">Fruits</div>
         <div class="fruits-section1">
           <img
+            id="main-fruits-img"
             alt="apple"
             src="/images/food-ingredients-img/apple.png"
-            class="main-fruits-img"
+            data-color="#b32920"
           />
-          <div class="fruits-effect">
-            <span class="title">효능</span>
-            <span class="title">영양성분</span>
-            <span>효과 1</span>
-            <span>성분 1</span>
-            <span>효과 2</span>
-            <span>성분 2</span>
-            <span>효과 3</span>
-            <span>성분 3</span>
+          <div class="food-effect">
+            <span class="fruits-effect-title">효능</span>
+            <span class="fruits-effect-title">영양성분</span>
+            <span class="fruits-effect-content">효과 1</span>
+            <span class="fruits-effect-content">성분 1</span>
+            <span class="fruits-effect-content">효과 2</span>
+            <span class="fruits-effect-content">성분 2</span>
+            <span class="fruits-effect-content">효과 3</span>
+            <span class="fruits-effect-content">성분 3</span>
           </div>
         </div>
         <div id="table-describe">100g 당 영양성분(mg)</div>
@@ -72,11 +73,12 @@
             </tr>
           </tbody>
         </table>
-        <div class="wrap-other-foods">
+        <div class="wrap-other-foods" id="other-fruits">
           <div class="other-foods">
             <img
               alt="grape"
               src="/images/food-ingredients-img/grape.png"
+              data-color="#785078"
               class="other-fruits-img"
             />
           </div>
@@ -84,6 +86,7 @@
             <img
               alt="pear"
               src="/images/food-ingredients-img/pear.png"
+              data-color="#d9a647"
               class="other-fruits-img"
             />
           </div>
@@ -91,6 +94,7 @@
             <img
               alt="mandarin"
               src="/images/food-ingredients-img/mandarin.png"
+              data-color="#ec852c"
               class="other-fruits-img"
             />
           </div>
@@ -99,19 +103,20 @@
         <div id="Vegitables">Vegitables</div>
         <div class="Vegitables-section1">
           <img
+            id="main-vegitable-img"
             alt="lettuce"
             src="/images/food-ingredients-img/lettuce.png"
-            class="main-fruits-img"
+            data-color="#5db746"
           />
-          <div class="fruits-effect">
-            <span class="title">효능</span>
-            <span class="title">영양성분</span>
-            <span>효과 1</span>
-            <span>성분 1</span>
-            <span>효과 2</span>
-            <span>성분 2</span>
-            <span>효과 3</span>
-            <span>성분 3</span>
+          <div class="food-effect">
+            <span class="vegitables-effect-title">효능</span>
+            <span class="vegitables-effect-title">영양성분</span>
+            <span class="vegitables-effect-content">효과 1</span>
+            <span class="vegitables-effect-content">성분 1</span>
+            <span class="vegitables-effect-content">효과 2</span>
+            <span class="vegitables-effect-content">성분 2</span>
+            <span class="vegitables-effect-content">효과 3</span>
+            <span class="vegitables-effect-content">성분 3</span>
           </div>
         </div>
         <div id="table-describe">100g 당 영양성분(mg)</div>
@@ -157,30 +162,34 @@
             </tr>
           </tbody>
         </table>
-        <div class="wrap-other-foods">
+        <div class="wrap-other-foods" id="other-vegitables">
           <div class="other-foods">
             <img
               alt="onion"
               src="/images/food-ingredients-img/onion.png"
-              class="other-fruits-img"
+              data-color="#d56a1a"
+              class="other-vegitables-img"
             />
           </div>
           <div class="other-foods">
             <img
               alt="korean-melon"
               src="/images/food-ingredients-img/korean-melon.png"
-              class="other-fruits-img"
+              data-color="#e3bf3c"
+              class="other-vegitables-img"
             />
           </div>
           <div class="other-foods">
             <img
               alt="tomato"
               src="/images/food-ingredients-img/tomato.png"
-              class="other-fruits-img"
+              data-color="#a0241b"
+              class="other-vegitables-img"
             />
           </div>
         </div>
       </div>
     </div>
+    <script src="/js/food-ingredients.js"></script>
   </body>
 </html>

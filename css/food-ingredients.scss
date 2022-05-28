@@ -27,12 +27,17 @@
   margin-top: 30%;
 }
 
-.main-fruits-img {
+#main-fruits-img {
   width: 500px;
   height: 500px;
 }
 
-.fruits-effect {
+#main-vegitable-img {
+  width: 500px;
+  height: 500px;
+}
+
+.food-effect {
   font-weight: bold;
   display: grid;
   width: 100%;
@@ -43,18 +48,24 @@
   grid-template-rows: auto auto;
   row-gap: 30px;
 
-  > span {
+  .fruits-effect-title,
+  .vegitables-effect-title {
+    padding: 50px 0 0 0;
+    opacity: 0.5;
+  }
+
+  .fruits-effect-content {
+    padding: 30px 0 30px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #b32920;
+  }
+  .vegitables-effect-content {
     padding: 30px 0 30px 0;
     text-align: center;
     width: 100%;
     background-color: #74a867;
   }
-}
-
-.title {
-  padding: 50px 0 0 0 !important;
-  opacity: 0.5;
-  background-color: #fff2f2 !important;
 }
 
 #table-describe {
@@ -80,7 +91,7 @@
   }
 
   .ingredients-content {
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 }
 
@@ -98,7 +109,8 @@
   border-radius: 200px;
 }
 
-.other-fruits-img {
+.other-fruits-img,
+.other-vegitables-img {
   margin-top: 50px;
   margin-left: 50px;
   height: 200px;
