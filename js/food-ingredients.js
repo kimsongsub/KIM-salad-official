@@ -27,7 +27,7 @@ function handleOtherFruits(fruit) {
   fruit.dataset.color = color;
   window.scroll({
     behavior: "smooth",
-    top: 250,
+    top: 140,
   });
 }
 
@@ -60,6 +60,6 @@ function handleOtherVegitables(vegitable) {
   vegitable.dataset.color = color;
   window.scroll({
     behavior: "smooth",
-    top: 1700,
+    top: 1590,
   });
 }

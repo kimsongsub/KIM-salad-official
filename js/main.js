@@ -1,7 +1,7 @@
 "use strict";
 const MAX_PAGE_NUMBER = 29999;
 
-let i = 0;
+let pageCount = 0;
 
 function rightSlide() {
   const detailMenuPage = document.querySelector(".detail-menu-page");
@@ -14,9 +14,10 @@ function rightSlide() {
   const section3 = document.querySelector(".section3");
   const section3Array = [section3_1, section3_2, section3_3];
 
-  section3Array[i % 3].classList.add("hide-element");
-  section3Array[(i + 1) % 3].classList.remove("hide-element");
-  const section3Background = section3Array[(i + 1) % 3].querySelector("div");
+  section3Array[pageCount % 3].classList.add("hide-element");
+  section3Array[(pageCount + 1) % 3].classList.remove("hide-element");
+  const section3Background =
+    section3Array[(pageCount + 1) % 3].querySelector("div");
 
   section3.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
@@ -25,9 +26,12 @@ function rightSlide() {
   detailMenuPage.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
 
-  i++;
+  pageCount++;
 
-  scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
+  window.scroll({
+    behavior: "smooth",
+    top: section1.clientHeight + section2.clientHeight + 110,
+  });
 }
 
 function leftSlide() {
@@ -40,9 +44,10 @@ function leftSlide() {
   const section2 = document.querySelector(".section2");
   const section3 = document.querySelector(".section3");
   const section3Array = [section3_1, section3_2, section3_3];
-  section3Array[i % 3].classList.add("hide-element");
-  section3Array[(i + 2) % 3].classList.remove("hide-element");
-  const section3Background = section3Array[(i + 2) % 3].querySelector("div");
+  section3Array[pageCount % 3].classList.add("hide-element");
+  section3Array[(pageCount + 2) % 3].classList.remove("hide-element");
+  const section3Background =
+    section3Array[(pageCount + 2) % 3].querySelector("div");
 
   section3.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
@@ -51,13 +56,16 @@ function leftSlide() {
   detailMenuPage.style.backgroundColor =
     getComputedStyle(section3Background).backgroundColor;
 
-  if (i == 0) {
-    i = MAX_PAGE_NUMBER;
+  if (pageCount == 0) {
+    pageCount = MAX_PAGE_NUMBER;
   } else {
-    i--;
+    pageCount--;
   }
 
-  scrollTo(0, section1.clientHeight + section2.clientHeight + 110);
+  window.scroll({
+    behavior: "smooth",
+    top: section1.clientHeight + section2.clientHeight + 110,
+  });
 }
 
 function findScrollInSectionNumber() {
