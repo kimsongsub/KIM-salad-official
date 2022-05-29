@@ -1,12 +1,27 @@
-(function () {
-  const otherFruits = document.querySelectorAll(".other-fruits-img");
+fetch("/food-ingredients-data.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((jsonData) =>
+    (function () {
+      const otherFruits = document.querySelectorAll(".other-fruits-img");
+      const otherVegitables = document.querySelectorAll(
+        ".other-vegitables-img"
+      );
 
-  otherFruits.forEach((fruit) => {
-    fruit.addEventListener("click", function () {
-      handleOtherFruits(fruit);
-    });
-  });
-})();
+      otherFruits.forEach((fruit) => {
+        fruit.addEventListener("click", function () {
+          handleFruitsIngredientsJsonData(fruit, jsonData);
+          handleOtherFruits(fruit);
+        });
+      });
+      otherVegitables.forEach((vegitable) => {
+        vegitable.addEventListener("click", function () {
+          handleOtherVegitables(vegitable);
+        });
+      });
+    })()
+  );
 
 function handleOtherFruits(fruit) {
   const mainFruitImg = document.querySelector("#main-fruits-img");
@@ -31,15 +46,19 @@ function handleOtherFruits(fruit) {
   });
 }
 
-(function () {
-  const otherVegitables = document.querySelectorAll(".other-vegitables-img");
-
-  otherVegitables.forEach((vegitable) => {
-    vegitable.addEventListener("click", function () {
-      handleOtherVegitables(vegitable);
-    });
-  });
-})();
+function handleFruitsIngredientsJsonData(fruit, jsonData) {
+  const mainEffects = document.querySelectorAll(".main-fruit-effect");
+  const mainIngredients = document.querySelectorAll(".main-fruit-ingredient");
+  for (let i = 0; i < 3; i++) {
+    mainEffects[i].innerText = Object.keys(jsonData.fruits.effects[fruit.alt])[
+      i
+    ];
+    mainIngredients[i].innerText = Object.values(
+      jsonData.fruits.effects[fruit.alt]
+    )[i];
+  }
+  console.log(jsonData.fruits.effects);
+}
 
 function handleOtherVegitables(vegitable) {
   const mainVegitablesImg = document.querySelector("#main-vegitable-img");
