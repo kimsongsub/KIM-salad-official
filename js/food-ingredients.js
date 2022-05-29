@@ -17,6 +17,7 @@ fetch("/food-ingredients-data.json")
       });
       otherVegitables.forEach((vegitable) => {
         vegitable.addEventListener("click", function () {
+          handleVegitablesIngredientsJsonData(vegitable, jsonData);
           handleOtherVegitables(vegitable);
         });
       });
@@ -57,7 +58,6 @@ function handleFruitsIngredientsJsonData(fruit, jsonData) {
       jsonData.fruits.effects[fruit.alt]
     )[i];
   }
-  console.log(jsonData.fruits.effects);
 }
 
 function handleOtherVegitables(vegitable) {
@@ -81,4 +81,19 @@ function handleOtherVegitables(vegitable) {
     behavior: "smooth",
     top: 1590,
   });
+}
+
+function handleVegitablesIngredientsJsonData(vegitable, jsonData) {
+  const mainEffects = document.querySelectorAll(".main-vegitable-effect");
+  const mainIngredients = document.querySelectorAll(
+    ".main-vegitable-ingredient"
+  );
+  for (let i = 0; i < 3; i++) {
+    mainEffects[i].innerText = Object.keys(
+      jsonData.vegitables.effects[vegitable.alt]
+    )[i];
+    mainIngredients[i].innerText = Object.values(
+      jsonData.vegitables.effects[vegitable.alt]
+    )[i];
+  }
 }
