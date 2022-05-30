@@ -3,6 +3,7 @@ const MAX_PAGE_NUMBER = 29999;
 let pageCount = 0;
 
 export function initMainJS() {
+  pageCount = 0;
   const rigthArrow = document.querySelector("#right_arrow");
   const leftArrow = document.querySelector("#left_arrow");
 
