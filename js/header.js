@@ -19,11 +19,17 @@
   });
 
   headerFruitLink.addEventListener("click", function () {
-    window.scrollTo(0, 0);
+    window.scroll({
+      behavior: "smooth",
+      top: 0,
+    });
   });
 
   headerVegiLink.addEventListener("click", function () {
-    window.scrollTo(0, 1450);
+    window.scroll({
+      behavior: "smooth",
+      top: 1450,
+    });
   });
 })();
 
