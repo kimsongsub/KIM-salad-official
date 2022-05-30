@@ -4,8 +4,8 @@ let pageCount = 0;
 
 export function initMainJS() {
   pageCount = 0;
-  const rigthArrow = document.querySelector("#right_arrow");
-  const leftArrow = document.querySelector("#left_arrow");
+  const rigthArrow = document.querySelector(".right-arrow");
+  const leftArrow = document.querySelector(".left-arrow");
 
   rigthArrow.addEventListener("click", rightSlide);
   leftArrow.addEventListener("click", leftSlide);

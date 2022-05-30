@@ -1,9 +1,9 @@
 (function () {
   const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
   const headerMenuItem = document.querySelectorAll(".header-menu li");
-  const headerLogo = document.querySelector("#KIM-salad");
-  const headerFruitLink = document.querySelector("#fruits-ingredients");
-  const headerVegiLink = document.querySelector("#vegitables-ingredients");
+  const headerLogo = document.querySelector("#KIMSalad");
+  const headerFruitLink = document.querySelector("#fruitsIngredients");
+  const headerVegiLink = document.querySelector("#vegitablesIngredients");
 
   detailMenuItem.forEach((menuItem) => {
     menuItem.addEventListener("click", route);

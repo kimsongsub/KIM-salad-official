@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url(reset.css);
 :root {
   --full-width: 100%;
   --section3-arrow-width: 3%;
@@ -69,7 +69,7 @@ header .header-background .header-menu :hover {
 }
 
 .wrap-detail-page {
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .wrap-detail-page .detail-menu-page {
   height: 40%;
@@ -116,46 +116,45 @@ header .header-background .header-menu :hover {
   padding: 110px 0;
 }
 
-.mainInfo {
+.main-info {
   padding: 34px 10%;
   display: flex;
   background-color: black;
   color: #fefefe;
 }
-.mainInfo > video {
+.main-info > video {
   width: 30%;
   margin: 0 auto;
 }
 
-.paragraph1 {
+.wrap-section1-paragraph {
   width: 60%;
 }
+.wrap-section1-paragraph > hr {
+  height: 4px;
+  background-color: #ffffff;
+  width: 100%;
+}
 
-#firstParagraph {
+.section1-first-paragraph {
   padding-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   line-height: 50px;
 }
 
-#secondParagraph {
+.section1-second-paragraph {
   padding: 10px;
   font-size: 18px;
 }
 
-.paragraph1 > hr {
-  height: 4px;
-  background-color: #ffffff;
-  width: 100%;
-}
-
-.mainImage {
+.wrap-section1-images {
   padding: 0 10%;
   display: flex;
   margin: 5% auto;
   justify-content: space-between;
 }
-.mainImage > img {
+.wrap-section1-images > img {
   width: 20%;
   border: 2px #ffffff solid;
   border-radius: 200px;
@@ -165,22 +164,32 @@ header .header-background .header-menu :hover {
   background-color: #73b46e;
   padding: var(--wrap-padding);
 }
+.section2 > div > img {
+  width: 50%;
+  margin: 3% auto;
+}
 
-#backgroundCanvas2 {
+.section2-background-canvas {
   display: flex;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.paragraph2 {
+.wrap-section2-paragraph {
   width: 40%;
   margin: 0 auto;
   line-height: 60px;
   color: #ffffff;
   text-shadow: 0px 2px 0 #000000;
 }
+.wrap-section2-paragraph > hr {
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
 
-#thirdParagraph {
+.section2-first-paragraph {
   line-height: 30px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -188,37 +197,25 @@ header .header-background .header-menu :hover {
   margin: 15% auto;
 }
 
-.paragraph2 > hr {
-  width: 90%;
-  height: 3px;
-  margin: 0 auto;
-  background-color: #ffffff;
-}
-
-#fourthParagraph {
+.section2-second-paragraph {
   font-size: 1rem;
   text-align: left;
   margin: 5% 0 0 5%;
   font-weight: bold;
 }
 
-.section2 > div > img {
-  width: 50%;
-  margin: 3% auto;
-}
-
 .section3 {
   background-color: #b9b6b6;
 }
 
-#left_arrow {
+.left-arrow {
   position: absolute;
   width: var(--section3-arrow-width);
   margin-top: 30%;
   margin-left: 3%;
 }
 
-#right_arrow {
+.right-arrow {
   position: absolute;
   width: 3%;
   margin-top: 30%;
@@ -229,7 +226,7 @@ header .header-background .header-menu :hover {
   padding: var(--wrap-padding);
 }
 
-#backgroundSection3-1 {
+.section3-1-background {
   display: flex;
   margin: 0 auto;
   background-color: #b9b6b6;
@@ -239,19 +236,19 @@ header .header-background .header-menu :hover {
   width: 50%;
 }
 
-#loveEarthImg {
+.love-earth-img {
   width: 80%;
   height: auto;
   margin-left: 10%;
 }
 
-#content3-1-1 {
+.section3-1-content {
   font-size: 18px;
   width: 80%;
   margin: 5% auto 0 auto;
 }
 
-#qusetion3-1 {
+.section3-1-qusetion {
   position: absolute;
   margin-left: 30%;
   line-height: 70px;
@@ -264,20 +261,20 @@ header .header-background .header-menu :hover {
   margin: 20% 0 0 auto;
 }
 
-#answer3-1 {
+.section3-1-answer {
   font-size: 34px;
   font-weight: bold;
   text-shadow: 0 1px 0 #000000;
 }
 
-#cowandcar {
+.cow-and-car {
   width: 80%;
   height: auto;
   border: solid 5px #000000;
   margin: 10% auto 0 10%;
 }
 
-#Content3-1-2 {
+.section3-1-description {
   font-size: 18px;
   font-weight: bold;
   text-align: right;
@@ -286,13 +283,13 @@ header .header-background .header-menu :hover {
 .section3-2 {
   padding: 15% 0 10% 0;
 }
-
-#backgroundSection3-2 {
-  background-color: #dbc5c3;
+.section3-2 img {
+  position: absolute;
+  border: #707070 5px solid;
 }
 
-#backgroundCanvas3-2 {
-  background-color: #e28b84;
+.section3-2-background {
+  background-color: #dbc5c3;
 }
 
 .section3-2-upper {
@@ -305,23 +302,60 @@ header .header-background .header-menu :hover {
   width: 70%;
 }
 
-#answer3-2 {
+.section3-2-answer {
   font-size: 36px;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
-#content3-2-1 {
+.section3-2-content1 {
   font-size: 20px;
   margin: 50px 0 30px 0;
 }
 
-.section3-2-upper-img {
+.section3-2-upper-images {
   width: 30%;
+}
+.section3-2-upper-images .pig1,
+.section3-2-upper-images .pig2 {
+  margin-left: 3%;
+  width: 300px;
+  height: 300px;
+}
+
+.section3-2-background-canvas {
+  background-color: #e28b84;
 }
 
 .section3-2-down {
   display: flex;
+}
+
+.section3-2-down-img {
+  width: 30%;
+}
+.section3-2-down-img .cow1,
+.section3-2-down-img .cow2 {
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 350px;
+  height: 350px;
+}
+
+.pig1,
+.cow1 {
+  z-index: 1;
+}
+
+.pig2,
+.cow2 {
+  z-index: 0;
+}
+
+.pig1:hover,
+.cow1:hover {
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section3-2-down-paragraph {
@@ -329,11 +363,7 @@ header .header-background .header-menu :hover {
   padding: 2% 15%;
 }
 
-.section3-2-down-img {
-  width: 30%;
-}
-
-#content3-2-2 {
+.section3-2-content2 {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -341,91 +371,55 @@ header .header-background .header-menu :hover {
   text-shadow: 0px 1px 0 #000000;
 }
 
-#content3-2-3 {
+.section3-2-content3 {
   margin-top: 5%;
   font-size: 20px;
-}
-
-.section3-2 img {
-  position: absolute;
-  border: #707070 5px solid;
-}
-
-#pig1,
-#pig2 {
-  margin-left: 3%;
-  width: 300px;
-  height: 300px;
-}
-
-#cow1,
-#cow2 {
-  margin-top: 2%;
-  margin-left: 10%;
-  width: 350px;
-  height: 350px;
-}
-
-#pig1,
-#cow1 {
-  z-index: 1;
-}
-
-#pig2,
-#cow2 {
-  z-index: 0;
-}
-
-#pig1:hover,
-#cow1:hover {
-  opacity: 0;
-  transition: all 1s;
 }
 
 .section3-3 {
   padding: var(--wrap-padding);
 }
 
-#backgroundSection3-3 {
+.section3-3-background {
   background-color: #66bec8;
 }
 
-#answer3-3 {
+.section3-3-answer {
   font-size: 34px;
   font-weight: bold;
   margin: 0 0 5% 10%;
 }
 
 .section3-3-grid-container {
-  justify-content: center;
   display: grid;
+  justify-content: center;
   grid-template-columns: 35% 35%;
   grid-template-rows: auto auto;
   row-gap: 5%;
   column-gap: 10%;
 }
 
-#backgroundCanvas3-3-1 {
-  background-color: #efeaf6;
-}
-
-#backgroundCanvas3-3-2 {
-  background-color: #f3d5d5;
-}
-
-#backgroundCanvas3-3-3 {
-  background-color: #e0f3ee;
-}
-
-#backgroundCanvas3-3-4 {
-  background-color: #f5f4e3;
-}
-
-.section3-3-backgroundCanvas {
+.section3-3-background-canvas {
   border: #000000 2px solid;
 }
 
-.content3-3 {
+.section3-3-background-canvas1 {
+  background-color: #efeaf6;
+}
+
+.section3-3-background-canvas2 {
+  background-color: #f3d5d5;
+}
+
+.section3-3-background-canvas3 {
+  background-color: #e0f3ee;
+}
+
+.section3-3-background-canvas4 {
+  background-color: #f5f4e3;
+}
+
+.section3-3-content {
   margin: 10% 5%;
   font-size: 16px;
   font-weight: bold;
@@ -438,7 +432,7 @@ header .header-background .header-menu :hover {
   padding: 15% 10% 5% 10%;
 }
 
-#since {
+.section4-main {
   width: 70%;
   font-size: 15rem;
   line-height: 350px;
@@ -464,33 +458,30 @@ header .header-background .header-menu :hover {
 .history-canvas {
   background-color: rgba(255, 255, 255, 0.7);
 }
-
-#history_icon {
-  width: 40%;
-  height: auto;
-}
-
-.KIM-salad-logo {
-  border: #000000 5px solid;
-}
-
-#KIM-salad-logo1 {
-  width: 80%;
-  grid-row: 2/3;
-  grid-column: 1/2;
-}
-
-#KIM-salad-logo2 {
-  width: 100%;
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
 .history-canvas p {
   font-size: 12px;
   text-align: left;
   padding: 10%;
   font-weight: bold;
+}
+
+.history-icon {
+  width: 40%;
+  height: auto;
+}
+
+.KIM-salad-logo1 {
+  border: #000000 5px solid;
+  width: 80%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.KIM-salad-logo2 {
+  border: #000000 5px solid;
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */

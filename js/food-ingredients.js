@@ -27,7 +27,7 @@ export function initFoodIngredientsJS() {
 }
 
 function handleOtherFruits(fruit) {
-  const mainFruitImg = document.querySelector("#main-fruits-img");
+  const mainFruitImg = document.querySelector(".main-fruits-img");
   const gridColor = document.querySelectorAll(".fruits-effect-content");
   const [src, alt, color] = [
     mainFruitImg.src,
@@ -82,7 +82,7 @@ function handleFruitsIngredientsJsonData(fruit, jsonData) {
 }
 
 function handleOtherVegitables(vegitable) {
-  const mainVegitablesImg = document.querySelector("#main-vegitable-img");
+  const mainVegitablesImg = document.querySelector(".main-vegitable-img");
   const gridColor = document.querySelectorAll(".vegitables-effect-content");
   const [src, alt, color] = [
     mainVegitablesImg.src,

@@ -3,15 +3,9 @@
   padding: 15% 10% 15% 10%;
 }
 
-#fruits {
+.fruits {
   position: absolute;
   top: 200px;
-  font-size: 38px;
-  font-weight: bold;
-}
-
-#Vegitables {
-  margin-top: 20%;
   font-size: 38px;
   font-weight: bold;
 }
@@ -20,17 +14,7 @@
   display: flex;
 }
 
-.Vegitables-section1 {
-  display: flex;
-  margin-top: 10%;
-}
-
-#main-fruits-img {
-  width: 500px;
-  height: 500px;
-}
-
-#main-vegitable-img {
+.main-fruits-img {
   width: 500px;
   height: 500px;
 }
@@ -64,24 +48,24 @@
   background-color: #74a867;
 }
 
-#table-describe {
+.table-describe {
   margin-top: 2%;
   opacity: 0.5;
   text-align: end;
 }
 
-#fruits-ingredients-table {
+.food-ingredients-table {
   font-weight: bold;
   margin-top: 2%;
   width: 100%;
 }
-#fruits-ingredients-table th {
+.food-ingredients-table th {
   width: 25%;
   background-color: azure;
   border: 1px solid #444444;
   padding: 10px;
 }
-#fruits-ingredients-table td {
+.food-ingredients-table td {
   padding: 5px;
   text-align: center;
   border: 1px solid #444444;
@@ -99,6 +83,22 @@
   background-color: azure;
   border: 2px black solid;
   border-radius: 200px;
+}
+
+.Vegitables {
+  margin-top: 20%;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.Vegitables-section1 {
+  display: flex;
+  margin-top: 10%;
+}
+
+.main-vegitable-img {
+  width: 500px;
+  height: 500px;
 }
 
 .other-fruits-img,
