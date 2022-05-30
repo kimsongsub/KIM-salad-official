@@ -1,28 +1,30 @@
-fetch("/food-ingredients-data.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((jsonData) =>
-    (function () {
-      const otherFruits = document.querySelectorAll(".other-fruits-img");
-      const otherVegitables = document.querySelectorAll(
-        ".other-vegitables-img"
-      );
+export function initFoodIngredientsJS() {
+  fetch("/food-ingredients-data.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((jsonData) =>
+      (function () {
+        const otherFruits = document.querySelectorAll(".other-fruits-img");
+        const otherVegitables = document.querySelectorAll(
+          ".other-vegitables-img"
+        );
 
-      otherFruits.forEach((fruit) => {
-        fruit.addEventListener("click", function () {
-          handleFruitsIngredientsJsonData(fruit, jsonData);
-          handleOtherFruits(fruit);
+        otherFruits.forEach((fruit) => {
+          fruit.addEventListener("click", function () {
+            handleFruitsIngredientsJsonData(fruit, jsonData);
+            handleOtherFruits(fruit);
+          });
         });
-      });
-      otherVegitables.forEach((vegitable) => {
-        vegitable.addEventListener("click", function () {
-          handleVegitablesIngredientsJsonData(vegitable, jsonData);
-          handleOtherVegitables(vegitable);
+        otherVegitables.forEach((vegitable) => {
+          vegitable.addEventListener("click", function () {
+            handleVegitablesIngredientsJsonData(vegitable, jsonData);
+            handleOtherVegitables(vegitable);
+          });
         });
-      });
-    })()
-  );
+      })()
+    );
+}
 
 function handleOtherFruits(fruit) {
   const mainFruitImg = document.querySelector("#main-fruits-img");

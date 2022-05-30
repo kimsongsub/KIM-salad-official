@@ -1,10 +1,9 @@
-"use strict";
-
 const route = (event) => {
   event = event || window.event;
   event.preventDefault();
   window.history.pushState({}, "", event.target.href);
   handleLocation();
+  console.log("function route");
 };
 
 const routes = {
@@ -25,9 +24,13 @@ const handleLocation = async () => {
 
 async function dynamicImportJS(path) {
   if (path === "/" || path === "/index.html") {
-    await import("/js/main.js");
+    console.log("dynamic import main.js");
+    const mainJS = await import("/js/main.js");
+    mainJS.initMainJS();
   } else if (path === "/food-ingredients") {
-    await import("/js/food-ingredients.js");
+    console.log("dynamic import food.js");
+    const foodIngredientsJS = await import("/js/food-ingredients.js");
+    foodIngredientsJS.initFoodIngredientsJS();
   }
 }
 

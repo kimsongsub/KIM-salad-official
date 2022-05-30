@@ -1,7 +1,16 @@
-"use strict";
 const MAX_PAGE_NUMBER = 29999;
 
 let pageCount = 0;
+
+export function initMainJS() {
+  const rigthArrow = document.querySelector("#right_arrow");
+  const leftArrow = document.querySelector("#left_arrow");
+
+  rigthArrow.addEventListener("click", rightSlide);
+  leftArrow.addEventListener("click", leftSlide);
+
+  document.addEventListener("scroll", handleBackgroundColor);
+}
 
 function rightSlide() {
   const detailMenuPage = document.querySelector(".detail-menu-page");
@@ -97,13 +106,3 @@ function handleBackgroundColor() {
     findScrollInSectionNumber()
   ).backgroundColor;
 }
-
-(function () {
-  const rigthArrow = document.querySelector("#right_arrow");
-  const leftArrow = document.querySelector("#left_arrow");
-
-  rigthArrow.addEventListener("click", rightSlide);
-  leftArrow.addEventListener("click", leftSlide);
-
-  document.addEventListener("scroll", handleBackgroundColor);
-})();
