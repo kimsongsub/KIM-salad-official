@@ -4,6 +4,7 @@
   const headerLogo = document.querySelector("#KIMSalad");
   const headerFruitLink = document.querySelector("#fruitsIngredients");
   const headerVegiLink = document.querySelector("#vegitablesIngredients");
+  const headerSauceLink = document.querySelector("#SauceIngredients");
 
   detailMenuItem.forEach((menuItem) => {
     menuItem.addEventListener("click", route);
@@ -29,6 +30,13 @@
     window.scroll({
       behavior: "smooth",
       top: 1450,
+    });
+  });
+
+  headerSauceLink.addEventListener("click", function () {
+    window.scroll({
+      behavior: "smooth",
+      top: 2200,
     });
   });
 })();

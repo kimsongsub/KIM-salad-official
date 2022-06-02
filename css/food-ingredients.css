@@ -109,4 +109,26 @@
   width: 200px;
 }
 
+.sauce {
+  margin-top: 20%;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.wrap-sauce {
+  margin-top: 10%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  border-width: 10px;
+  border-style: double;
+  border-color: black;
+}
+.wrap-sauce > img {
+  width: 30vw;
+  height: 30vw;
+}
+
 /*# sourceMappingURL=food-ingredients.css.map */
