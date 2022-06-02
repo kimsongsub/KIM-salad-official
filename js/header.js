@@ -36,7 +36,7 @@
   headerSauceLink.addEventListener("click", function () {
     window.scroll({
       behavior: "smooth",
-      top: 2200,
+      top: 3000,
     });
   });
 })();
