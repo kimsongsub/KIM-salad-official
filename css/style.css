@@ -69,7 +69,7 @@ header .header-background .header-menu :hover {
 }
 
 .wrap-detail-page {
-  transition: all 0.5s;
+  transition: all 0.1s;
 }
 .wrap-detail-page .detail-menu-page {
   height: 40%;
