@@ -1,8 +1,11 @@
 const route = (event) => {
+  const previousHref = window.location.href;
   event = event || window.event;
   if (event.target.href !== "https://www.instagram.com/kim_salad_official/") {
+    if (previousHref !== event.target.href) {
+      window.history.pushState({}, "", event.target.href);
+    }
     event.preventDefault();
-    window.history.pushState({}, "", event.target.href);
     handleLocation();
   }
 };
