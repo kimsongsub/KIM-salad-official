@@ -20,26 +20,44 @@
   });
 
   headerFruitLink.addEventListener("click", function () {
-    window.scroll({
-      behavior: "smooth",
-      top: 0,
-    });
+    handleFoodScroll("fruit");
   });
 
   headerVegiLink.addEventListener("click", function () {
-    window.scroll({
-      behavior: "smooth",
-      top: 1450,
-    });
+    handleFoodScroll("vegitable");
   });
 
   headerSauceLink.addEventListener("click", function () {
-    window.scroll({
-      behavior: "smooth",
-      top: 3000,
-    });
+    handleFoodScroll("sauce");
   });
 })();
+
+function handleFoodScroll(foodType) {
+  const fruitSection = document.querySelector("#wrapFruits");
+  const vegitableSection = document.querySelector("#wrapVegitables");
+  switch (foodType) {
+    case "fruit":
+      window.scroll({
+        behavior: "smooth",
+        top: 0,
+      });
+      break;
+
+    case "vegitable":
+      window.scroll({
+        behavior: "smooth",
+        top: 1500,
+      });
+      break;
+
+    case "sauce":
+      window.scroll({
+        behavior: "smooth",
+        top: 3000,
+      });
+      break;
+  }
+}
 
 function handleDetailMenu() {
   const wrapDetailPage = document.querySelector(".wrap-detail-page");
