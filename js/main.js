@@ -6,11 +6,16 @@ export function initMainJS() {
   pageCount = 0;
   const rigthArrow = document.querySelector(".right-arrow");
   const leftArrow = document.querySelector(".left-arrow");
+  const wrapDish = document.querySelectorAll(".wrap-section1-dish");
 
   rigthArrow.addEventListener("click", rightSlide);
   leftArrow.addEventListener("click", leftSlide);
-
   document.addEventListener("scroll", handleBackgroundColor);
+  wrapDish.forEach((dish) => {
+    dish.addEventListener("click", function () {
+      putCartOrOrder(dish);
+    });
+  });
 }
 
 function rightSlide() {
@@ -106,4 +111,9 @@ function handleBackgroundColor() {
   detailMenuPage.style.backgroundColor = getComputedStyle(
     findScrollInSectionNumber()
   ).backgroundColor;
+}
+
+function putCartOrOrder(dish) {
+  const dishName = dish.querySelector(".paragrah-dish");
+  console.log(`You selected ${dishName.innerText}`);
 }
