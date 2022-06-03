@@ -159,24 +159,24 @@ header .header-background .header-menu :hover {
   font-weight: bold;
 }
 
-.wrap-section1-images {
+.wrap-section1-dishes {
   padding: 0 10%;
   display: flex;
   margin-top: 5%;
   justify-content: space-between;
 }
 
-.wrap-section1-image {
+.wrap-section1-dish {
   position: relative;
   width: 20%;
 }
-.wrap-section1-image:hover .dish-image {
+.wrap-section1-dish:hover .dish-image {
   opacity: 0.2;
 }
-.wrap-section1-image:hover .paragrah-dish {
+.wrap-section1-dish:hover .paragrah-dish {
   opacity: 1;
 }
-.wrap-section1-image .dish-image {
+.wrap-section1-dish .dish-image {
   width: 100%;
   border: 4px #ffffff double;
   border-radius: 200px;
