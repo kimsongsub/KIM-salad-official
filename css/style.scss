@@ -106,6 +106,10 @@ header {
       justify-items: center;
       align-items: center;
       background-color: rgba(255, 255, 255, 0.5);
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+      border-radius: 10px;
       width: 70%;
       height: 80%;
 
@@ -164,17 +168,47 @@ header {
   font-size: 18px;
 }
 
+.section1-menu {
+  padding-left: 10%;
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .wrap-section1-images {
   padding: 0 10%;
   display: flex;
-  margin: 5% auto;
+  margin-top: 5%;
   justify-content: space-between;
+}
 
-  > img {
-    width: 20%;
-    border: 2px #ffffff solid;
+.wrap-section1-image {
+  position: relative;
+  width: 20%;
+
+  &:hover .dish-image {
+    opacity: 0.2;
+  }
+
+  &:hover .paragrah-dish {
+    opacity: 1;
+  }
+
+  .dish-image {
+    width: 100%;
+    border: 4px #ffffff double;
     border-radius: 200px;
   }
+}
+
+.paragrah-dish {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .section2 {
