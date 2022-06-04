@@ -61,7 +61,7 @@
 }
 .food-ingredients-table th {
   width: 25%;
-  background-color: azure;
+  background-color: white;
   border: 1px solid #444444;
   padding: 10px;
 }
@@ -80,7 +80,7 @@
 .other-foods {
   height: 200px;
   width: 200px;
-  background-color: azure;
+  background-color: white;
   border: 2px solid black;
   border-radius: 200px;
 }
