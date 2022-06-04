@@ -1,5 +1,6 @@
 (function () {
   const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
+  const homeBtn = document.querySelector(".header-logo a");
   const headerMenuItem = document.querySelectorAll(".header-menu li");
   const headerLogo = document.querySelector("#KIMSalad");
   const headerFruitLink = document.querySelector("#fruitsIngredients");
@@ -11,6 +12,8 @@
     menuItem.addEventListener("click", handleDetailMenu);
   });
 
+  homeBtn.addEventListener("click", route);
+
   headerMenuItem.forEach((item) => {
     item.addEventListener("click", handleDetailMenu);
   });
@@ -20,44 +23,26 @@
   });
 
   headerFruitLink.addEventListener("click", function () {
-    handleFoodScroll("fruit");
+    window.scroll({
+      behavior: "smooth",
+      top: 0,
+    });
   });
 
   headerVegiLink.addEventListener("click", function () {
-    handleFoodScroll("vegitable");
+    window.scroll({
+      behavior: "smooth",
+      top: document.documentElement.scrollHeight / 3,
+    });
   });
 
   headerSauceLink.addEventListener("click", function () {
-    handleFoodScroll("sauce");
+    window.scroll({
+      behavior: "smooth",
+      top: (document.documentElement.scrollHeight * 7) / 10,
+    });
   });
 })();
-
-function handleFoodScroll(foodType) {
-  const fruitSection = document.querySelector("#wrapFruits");
-  const vegitableSection = document.querySelector("#wrapVegitables");
-  switch (foodType) {
-    case "fruit":
-      window.scroll({
-        behavior: "smooth",
-        top: 0,
-      });
-      break;
-
-    case "vegitable":
-      window.scroll({
-        behavior: "smooth",
-        top: 1500,
-      });
-      break;
-
-    case "sauce":
-      window.scroll({
-        behavior: "smooth",
-        top: 3000,
-      });
-      break;
-  }
-}
 
 function handleDetailMenu() {
   const wrapDetailPage = document.querySelector(".wrap-detail-page");
