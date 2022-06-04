@@ -103,14 +103,19 @@ function findScrollInSectionNumber() {
 }
 
 function handleBackgroundColor() {
-  const headerBackground = document.querySelector(".header-background");
-  const detailMenuPage = document.querySelector(".detail-menu-page");
-  headerBackground.style.backgroundColor = getComputedStyle(
-    findScrollInSectionNumber()
-  ).backgroundColor;
-  detailMenuPage.style.backgroundColor = getComputedStyle(
-    findScrollInSectionNumber()
-  ).backgroundColor;
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    const headerBackground = document.querySelector(".header-background");
+    const detailMenuPage = document.querySelector(".detail-menu-page");
+    headerBackground.style.backgroundColor = getComputedStyle(
+      findScrollInSectionNumber()
+    ).backgroundColor;
+    detailMenuPage.style.backgroundColor = getComputedStyle(
+      findScrollInSectionNumber()
+    ).backgroundColor;
+  }
 }
 
 function putCartOrOrder(dish) {
