@@ -103,7 +103,6 @@ function findScrollInSectionNumber() {
       return section4;
     }
   } catch (e) {
-    // 다른 페이지에서 스크롤된 상태에서 Home으로 올 때 HTML이 로드 되기 전이기 때문에 header요소로 직접 전달
     if (e instanceof TypeError) {
       const headerBackground = document.querySelector(".header-background");
       return headerBackground;
