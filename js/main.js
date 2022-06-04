@@ -10,12 +10,12 @@ export function initMainJS() {
 
   rigthArrow.addEventListener("click", rightSlide);
   leftArrow.addEventListener("click", leftSlide);
-  document.addEventListener("scroll", handleBackgroundColor);
   wrapDish.forEach((dish) => {
     dish.addEventListener("click", function () {
       putCartOrOrder(dish);
     });
   });
+  document.addEventListener("scroll", handleBackgroundColor);
 }
 
 function rightSlide() {
@@ -84,21 +84,32 @@ function leftSlide() {
 }
 
 function findScrollInSectionNumber() {
-  const section1 = document.querySelector(".section1");
-  const section2 = document.querySelector(".section2");
-  const section3 = document.querySelector(".section3");
-  const section4 = document.querySelector(".section4");
-  if (window.scrollY < section1.clientHeight) {
-    return section1;
-  } else if (window.scrollY < section1.clientHeight + section2.clientHeight) {
-    return section2;
-  } else if (
-    window.scrollY <
-    section1.clientHeight + section2.clientHeight + section3.clientHeight
-  ) {
-    return section3;
-  } else {
-    return section4;
+  try {
+    const section1 = document.querySelector(".section1");
+    const section2 = document.querySelector(".section2");
+    const section3 = document.querySelector(".section3");
+    const section4 = document.querySelector(".section4");
+
+    if (window.scrollY < section1.clientHeight) {
+      return section1;
+    } else if (window.scrollY < section1.clientHeight + section2.clientHeight) {
+      return section2;
+    } else if (
+      window.scrollY <
+      section1.clientHeight + section2.clientHeight + section3.clientHeight
+    ) {
+      return section3;
+    } else {
+      return section4;
+    }
+  } catch (e) {
+    // 다른 페이지에서 스크롤된 상태에서 Home으로 올 때 HTML이 로드 되기 전이기 때문에 header요소로 직접 전달
+    if (e instanceof TypeError) {
+      const headerBackground = document.querySelector(".header-background");
+      return headerBackground;
+    } else {
+      console.log(e);
+    }
   }
 }
 
