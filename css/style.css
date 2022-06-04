@@ -29,7 +29,15 @@ body {
   margin: 0 auto;
 }
 
-/* header */
+.hover-active-animation:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.hover-active-animation:active {
+  transform: translateY(4px);
+}
+
 header .header-background {
   background-color: #e6de6e;
   display: grid;
@@ -103,11 +111,7 @@ header .header-background .header-menu :hover {
   width: 70%;
   height: 80%;
 }
-.wrap-detail-page .detail-menu-page .inner-detail-page :nth-child(6) {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.wrap-detail-page .detail-menu-page .inner-detail-page :nth-child(7) {
+.wrap-detail-page .detail-menu-page .inner-detail-page :nth-child(8) {
   grid-column: 3/4;
   grid-row: 3/4;
 }
@@ -260,17 +264,25 @@ header .header-background .header-menu :hover {
 }
 
 .left-arrow {
+  cursor: pointer;
   position: absolute;
   width: var(--section3-arrow-width);
   margin-top: 30%;
   margin-left: 3%;
+  font-size: 34px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 .right-arrow {
+  cursor: pointer;
   position: absolute;
   width: 3%;
   margin-top: 30%;
   margin-left: calc(100% - var(--section3-arrow-width) - 3%);
+  font-size: 34px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 .section3-1 {
