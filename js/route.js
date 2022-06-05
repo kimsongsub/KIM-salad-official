@@ -15,6 +15,7 @@ const routes = {
   "/": "/page/main.html",
   "/index.html": "/page/main.html",
   "/food-ingredients": "/page/food-ingredients.html",
+  "/log-in": "/page/log-in.html",
 };
 
 const handleLocation = async () => {
@@ -33,6 +34,9 @@ async function dynamicImportJS(path) {
   } else if (path === "/food-ingredients") {
     const foodIngredientsJS = await import("/js/food-ingredients.js");
     foodIngredientsJS.initFoodIngredientsJS();
+  } else if (path === "/log-in") {
+    // const logInJS = await import("/js/log-in.js");
+    // logInJS.initLogInJS();
   }
 }
 
@@ -43,6 +47,9 @@ function changeHeaderBackground(path) {
     headerBackground.style.backgroundColor = "#e6de6e";
     detailMenuPage.style.backgroundColor = "#e6de6e";
   } else if (path === "/food-ingredients") {
+    headerBackground.style.backgroundColor = "#fff2f2";
+    detailMenuPage.style.backgroundColor = "#fff2f2";
+  } else if (path === "/log-in") {
     headerBackground.style.backgroundColor = "#fff2f2";
     detailMenuPage.style.backgroundColor = "#fff2f2";
   }
