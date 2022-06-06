@@ -29,15 +29,6 @@ body {
   margin: 0 auto;
 }
 
-.hover-active-animation:hover {
-  transform: translateY(-2px);
-  cursor: pointer;
-}
-
-.hover-active-animation:active {
-  transform: translateY(4px);
-}
-
 header .header-background {
   background-color: #e6de6e;
   display: grid;
