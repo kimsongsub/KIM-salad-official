@@ -1,12 +1,12 @@
 .log-in-page {
-  background-color: #fff2f2;
   padding: 0 10% 10% 10%;
+  background-color: #fff2f2;
 }
 
 .wrap-log-in {
-  width: 100%;
   margin: 0 auto;
   padding-top: 110px;
+  width: 100%;
 }
 
 .log-in-icon {
@@ -21,19 +21,19 @@
 }
 
 .wrap-log-in-input {
-  font-weight: bold;
-  font-size: 2vw;
-  margin-right: 40%;
   text-align: end;
+  margin-right: 40%;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .log-in-input {
-  font-size: 26px;
   text-align: center;
+  margin: 1%;
   height: 32px;
   width: 350px;
-  margin: 1%;
   border: 3px black solid;
+  font-size: 26px;
 }
 
 .log-in-btn {
@@ -43,17 +43,16 @@
   transform: translate(-50%, -50%);
   width: 150px;
   height: 100px;
-  font-weight: bold;
-  background-color: white;
   border: 3px black solid;
+  font-weight: bold;
   font-size: 32px;
   cursor: pointer;
+  background-color: white;
 }
 
 .sign-up {
   display: block;
-  margin: 0 auto;
-  margin-top: 4%;
+  margin: 4% auto 0 auto;
   width: 30vw;
   height: 5vw;
   font-size: 2vw;
@@ -64,6 +63,6 @@
   margin: 0 auto;
   margin-top: 2%;
   border: 0px;
-  background-color: #fff2f2;
   font-size: 1.5vw;
+  background-color: #fff2f2;
 }
