@@ -1,25 +1,42 @@
-<div class="log-in-page">
-  <div class="wrap-log-in">
-    <img class="log-in-icon" alt="icon" src="/images/icon.png" />
-    <form class="log-in-form">
-      <div class="wrap-log-in-input">
-        <span>ID :</span>
-        <input
-          class="log-in-input"
-          type="email"
-          placeholder="ID는 e-mail입니다."
-          required
-        />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/log-in.css" />
+    <link rel="stylesheet" href="/css/btn-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="log-in-page">
+      <div class="wrap-log-in">
+        <img class="log-in-icon" alt="icon" src="/images/icon.png" />
+        <form class="log-in-form">
+          <div class="wrap-log-in-input">
+            <span>ID :</span>
+            <input
+              class="log-in-input"
+              type="email"
+              placeholder="ID is an e-mail."
+              required
+            />
+          </div>
+          <div class="wrap-log-in-input">
+            <span>PW :</span>
+            <input class="log-in-input" type="password" required />
+          </div>
+          <input class="log-in-btn" type="submit" value="Log In" />
+        </form>
+        <button class="sign-up basic-btn-style hover-active-animation">
+          Wanna Join? Sign Up!
+        </button>
+        <button class="find-id-pw hover-active-animation">
+          Forgot ID or password?
+        </button>
       </div>
-      <div class="wrap-log-in-input">
-        <span>PW :</span>
-        <input class="log-in-input" type="password" required />
-      </div>
-      <input class="log-in-btn" type="submit" value="Log In" />
-    </form>
-    <button class="sign-up hover-active-animation">Wanna Join? Sign Up!</button>
-    <button class="find-id-pw hover-active-animation">
-      Forgot ID or password?
-    </button>
-  </div>
-</div>
+    </div>
+    <script src="/js/log-in.js"></script>
+  </body>
+</html>

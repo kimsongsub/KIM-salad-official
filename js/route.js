@@ -1,3 +1,16 @@
+(function () {
+  const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
+  detailMenuItem.forEach((menuItem) => {
+    if (menuItem.target !== "_blank") {
+      menuItem.addEventListener("click", route);
+    }
+  });
+
+  window.onpopstate = handleLocation;
+  window.route = route;
+  handleLocation();
+})();
+
 const route = (event) => {
   const previousHref = window.location.href;
   event = event || window.event;
@@ -10,15 +23,14 @@ const route = (event) => {
   }
 };
 
-const routes = {
-  404: "/page/404.html",
-  "/": "/page/main.html",
-  "/index.html": "/page/main.html",
-  "/food-ingredients": "/page/food-ingredients.html",
-  "/log-in": "/page/log-in.html",
-};
-
 const handleLocation = async () => {
+  const routes = {
+    404: "/page/404.html",
+    "/": "/page/main.html",
+    "/index.html": "/page/main.html",
+    "/food-ingredients": "/page/food-ingredients.html",
+    "/log-in": "/page/log-in.html",
+  };
   const path = window.location.pathname;
   const route = routes[path] || routes[404];
   const html = await fetch(route).then((data) => data.text());
@@ -54,17 +66,3 @@ function changeHeaderBackground(path) {
     detailMenuPage.style.backgroundColor = "#fff2f2";
   }
 }
-
-(function () {
-  const detailMenuItem = document.querySelectorAll(".inner-detail-page a");
-  detailMenuItem.forEach((menuItem) => {
-    if (menuItem.target !== "_blank") {
-      menuItem.addEventListener("click", route);
-    }
-  });
-
-  window.onpopstate = handleLocation;
-  window.route = route;
-
-  handleLocation();
-})();
