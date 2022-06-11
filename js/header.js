@@ -6,6 +6,7 @@
   const headerFruitLink = document.querySelector("#fruitsIngredients");
   const headerVegiLink = document.querySelector("#vegitablesIngredients");
   const headerSauceLink = document.querySelector("#SauceIngredients");
+  const headerLogInLink = document.querySelector("#login");
   const scrollTopBtn = document.querySelector(".scroll-top-btn");
 
   detailMenuItem.forEach((menuItem) => {
@@ -41,6 +42,13 @@
     window.scroll({
       behavior: "smooth",
       top: (document.documentElement.scrollHeight * 7) / 10,
+    });
+  });
+
+  headerLogInLink.addEventListener("click", function () {
+    window.scroll({
+      behavior: "smooth",
+      top: 0,
     });
   });
 
