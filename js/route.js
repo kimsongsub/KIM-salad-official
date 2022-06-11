@@ -11,7 +11,7 @@
   handleLocation();
 })();
 
-const route = (event) => {
+function route(event) {
   const previousHref = window.location.href;
   event = event || window.event;
   if (event.target.href !== "https://www.instagram.com/kim_salad_official/") {
@@ -21,9 +21,9 @@ const route = (event) => {
     event.preventDefault();
     handleLocation();
   }
-};
+}
 
-const handleLocation = async () => {
+async function handleLocation() {
   const routes = {
     404: "/page/404.html",
     "/": "/page/main.html",
@@ -37,7 +37,7 @@ const handleLocation = async () => {
   document.getElementById("mainPage").innerHTML = html;
   dynamicImportJS(path);
   changeHeaderBackground(path);
-};
+}
 
 async function dynamicImportJS(path) {
   if (path === "/" || path === "/index.html") {
