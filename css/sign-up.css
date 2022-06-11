@@ -1,10 +1,10 @@
 .wrap-sign-up {
-  padding: 5% 10% 0% 10%;
+  padding-top: 5%;
 }
 
 .wrap-sign-up h1 {
   text-align: center;
-  font-size: 52px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -14,51 +14,57 @@
 }
 
 .wrap-sign-up-form-left {
+  background-color: bisque;
   text-align: end;
-  width: 40%;
+  width: 40vw;
 }
 
 .wrap-sign-up-form-left div {
-  margin: 3%;
+  margin: 2% 2% 12% 2%;
 }
 
 .wrap-sign-up-form-left :nth-child(4) {
-  margin-top: 16%;
+  margin-top: 3.5rem;
 }
 
 .wrap-sign-up-form-left span {
-  font-size: 32px;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .wrap-sign-up-form-right {
-  width: 60%;
+  background-color: aqua;
+  width: 70vw;
+}
+
+.wrap-sign-up-form-right input {
+  font-size: 1rem;
 }
 
 .wrap-sign-up-form-input {
   text-align: center;
-  width: 400px;
-  height: 32px;
+  width: 20rem;
+  height: 2rem;
   margin: 1%;
   border: 2px black solid;
 }
 
 .confirm-btn {
   margin-bottom: 8%;
-  font-size: 18px;
+  font-size: 1rem;
+}
+
+.input-with-btn {
+  width: 5rem;
+  height: 2.2rem;
 }
 
 .sign-up-btn {
   display: block;
   margin: 5% auto 3% auto;
-  width: 10vw;
-  height: 5vw;
-  font-size: 2vw;
-}
-
-.input-with-btn {
-  width: 85px;
-  height: 40px;
+  width: 8rem;
+  height: 4rem;
+  font-size: 1.3rem;
 }
 
 .wrap-sign-up-img {
@@ -66,5 +72,5 @@
 }
 
 .sign-up-img {
-  width: 100px;
+  width: 6rem;
 }

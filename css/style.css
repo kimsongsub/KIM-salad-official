@@ -14,6 +14,11 @@
     font-size: 70%;
   }
 }
+@media (min-width: 1201px) {
+  :root {
+    font-size: 100%;
+  }
+}
 :root {
   --full-width: 100%;
   --section3-arrow-width: 3%;
@@ -216,7 +221,7 @@ header .header-background .header-menu :hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
   opacity: 0;
 }
@@ -343,7 +348,7 @@ header .header-background .header-menu :hover {
   margin: 10% auto 0 10%;
   width: 80%;
   height: auto;
-  border: solid 5px #000000;
+  border: solid 2px #000000;
 }
 
 .section3-1-description {
@@ -431,21 +436,22 @@ header .header-background .header-menu :hover {
 }
 
 .section3-2-down-paragraph {
+  margin-left: 10%;
+  padding: 2% 10%;
   width: 60%;
-  padding: 2% 15%;
 }
 
 .section3-2-content2 {
   text-align: center;
   line-height: 28px;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content3 {
   margin-top: 5%;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .section3-3 {
@@ -458,7 +464,7 @@ header .header-background .header-menu :hover {
 
 .section3-3-answer {
   margin: 0 0 5% 10%;
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -494,7 +500,7 @@ header .header-background .header-menu :hover {
 .section3-3-content {
   text-align: center;
   margin: 10% 5%;
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 

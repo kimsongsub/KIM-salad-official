@@ -1,5 +1,5 @@
 .log-in-page {
-  padding: 0 10% 10% 10%;
+  padding: 0 10% 15% 10%;
   background-color: #fff2f2;
 }
 
@@ -12,8 +12,8 @@
 .log-in-icon {
   display: block;
   margin: 0 auto;
-  width: 60vh;
-  height: 45vh;
+  width: 17rem;
+  height: 13rem;
 }
 
 .log-in-form {
@@ -23,17 +23,17 @@
 .wrap-log-in-input {
   text-align: end;
   margin-right: 40%;
-  font-size: 2vw;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .log-in-input {
   text-align: center;
   margin: 1%;
-  height: 32px;
-  width: 350px;
-  border: 3px black solid;
-  font-size: 26px;
+  height: 1.7rem;
+  width: 13rem;
+  border: 2px black solid;
+  font-size: 1rem;
 }
 
 .log-in-btn {
@@ -41,11 +41,11 @@
   top: 50%;
   left: 67%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: 100px;
-  border: 3px black solid;
+  width: 6rem;
+  height: 4.5rem;
+  border: 2px black solid;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 1rem;
   cursor: pointer;
   background-color: white;
 }
@@ -53,9 +53,9 @@
 .sign-up {
   display: block;
   margin: 4% auto 0 auto;
-  width: 30vw;
-  height: 5vw;
-  font-size: 2vw;
+  width: 18rem;
+  height: 4rem;
+  font-size: 1.3rem;
 }
 
 .find-id-pw {
@@ -63,6 +63,6 @@
   margin: 0 auto;
   margin-top: 2%;
   border: 0px;
-  font-size: 1.5vw;
+  font-size: 1rem;
   background-color: #fff2f2;
 }
