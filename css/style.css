@@ -1,4 +1,19 @@
 @import url(reset.css);
+@media screen and (max-width: 560px) {
+  :root {
+    font-size: 40%;
+  }
+}
+@media (min-width: 561px) and (max-width: 800px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  :root {
+    font-size: 70%;
+  }
+}
 :root {
   --full-width: 100%;
   --section3-arrow-width: 3%;
@@ -66,7 +81,7 @@ header .header-background .header-menu {
   justify-items: center;
   align-items: center;
   width: 70%;
-  font-size: 22px;
+  font-size: 1rem;
 }
 header .header-background .header-menu :hover {
   cursor: pointer;
@@ -115,14 +130,14 @@ header .header-background .header-menu :hover {
 
 .scroll-top-btn {
   position: fixed;
-  right: 1%;
+  right: 2%;
   bottom: 2%;
-  width: 3vw;
-  height: 3vw;
+  width: 3vmax;
+  height: 3vmax;
   border: 0px;
   border-radius: 10px;
   box-shadow: 4px 4px #999;
-  font-size: 18px;
+  font-size: 0.7rem;
   cursor: pointer;
   color: white;
   background-color: black;
@@ -157,19 +172,19 @@ header .header-background .header-menu :hover {
 .section1-first-paragraph {
   padding-bottom: 10px;
   line-height: 50px;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .section1-second-paragraph {
   padding: 10px;
-  font-size: 18px;
+  font-size: 0.7rem;
 }
 
 .section1-menu {
   padding-left: 10%;
   margin-top: 5%;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -251,28 +266,31 @@ header .header-background .header-menu :hover {
 }
 
 .section3 {
+  position: relative;
   background-color: #b9b6b6;
 }
 
 .left-arrow {
   position: absolute;
-  margin-top: 30%;
-  margin-left: 3%;
-  width: var(--section3-arrow-width);
+  top: 30vw;
+  left: 3vw;
+  width: 3%;
+  text-align: center;
   border: 0px;
   border-radius: 10px;
-  font-size: 34px;
+  font-size: 2rem;
   cursor: pointer;
 }
 
 .right-arrow {
   position: absolute;
-  margin-top: 30%;
-  margin-left: calc(100% - var(--section3-arrow-width) - 3%);
+  top: 30vw;
+  right: 3vw;
   width: 3%;
-  font-size: 34px;
+  text-align: center;
   border: 0px;
   border-radius: 10px;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -299,14 +317,14 @@ header .header-background .header-menu :hover {
 .section3-1-content {
   margin: 5% auto 0 auto;
   width: 80%;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .section3-1-qusetion {
   position: absolute;
   margin-left: 30%;
   line-height: 70px;
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -316,7 +334,7 @@ header .header-background .header-menu :hover {
 }
 
 .section3-1-answer {
-  font-size: 34px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 0 1px 0 #000000;
 }
@@ -330,7 +348,7 @@ header .header-background .header-menu :hover {
 
 .section3-1-description {
   text-align: right;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -348,7 +366,6 @@ header .header-background .header-menu :hover {
 
 .section3-2-upper {
   display: flex;
-  justify-content: center;
   padding: 0 10%;
 }
 
@@ -357,14 +374,14 @@ header .header-background .header-menu :hover {
 }
 
 .section3-2-answer {
-  font-size: 36px;
+  font-size: 1.7rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content1 {
   margin: 50px 0 30px 0;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .section3-2-upper-images {
@@ -372,9 +389,10 @@ header .header-background .header-menu :hover {
 }
 .section3-2-upper-images .pig1,
 .section3-2-upper-images .pig2 {
-  margin-left: 3%;
-  width: 300px;
-  height: 300px;
+  top: 23%;
+  right: 13%;
+  width: 11rem;
+  height: 11rem;
 }
 
 .section3-2-background-canvas {
@@ -390,10 +408,10 @@ header .header-background .header-menu :hover {
 }
 .section3-2-down-img .cow1,
 .section3-2-down-img .cow2 {
-  margin-top: 2%;
-  margin-left: 10%;
-  width: 350px;
-  height: 350px;
+  top: 55%;
+  left: 10%;
+  width: 12rem;
+  height: 12rem;
 }
 
 .pig1,
@@ -489,7 +507,7 @@ header .header-background .header-menu :hover {
 .section4-main {
   width: 70%;
   text-align: center;
-  line-height: 350px;
+  line-height: 15rem;
   font-size: 15rem;
   color: #ff6737;
   text-shadow: 2px 2px 2px black;

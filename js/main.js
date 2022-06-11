@@ -44,7 +44,7 @@ function rightSlide() {
 
   window.scroll({
     behavior: "smooth",
-    top: section1.clientHeight + section2.clientHeight + 110,
+    top: section1.clientHeight + section2.clientHeight,
   });
 }
 
@@ -78,7 +78,7 @@ function leftSlide() {
 
   window.scroll({
     behavior: "smooth",
-    top: section1.clientHeight + section2.clientHeight + 110,
+    top: section1.clientHeight + section2.clientHeight,
   });
 }
 
