@@ -1,24 +1,4 @@
 @import url(reset.css);
-@media screen and (max-width: 560px) {
-  :root {
-    font-size: 40%;
-  }
-}
-@media (min-width: 561px) and (max-width: 800px) {
-  :root {
-    font-size: 67.5%;
-  }
-}
-@media (min-width: 801px) and (max-width: 1200px) {
-  :root {
-    font-size: 70%;
-  }
-}
-@media (min-width: 1201px) {
-  :root {
-    font-size: 100%;
-  }
-}
 :root {
   --full-width: 100%;
   --section3-arrow-width: 3%;
@@ -560,6 +540,27 @@ header .header-background .header-menu :hover {
   grid-column: 2/3;
   width: 100%;
   border: #000000 5px solid;
+}
+
+@media screen and (max-width: 560px) {
+  :root {
+    font-size: 40%;
+  }
+}
+@media (min-width: 561px) and (max-width: 800px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  :root {
+    font-size: 70%;
+  }
+}
+@media (min-width: 1201px) {
+  :root {
+    font-size: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
