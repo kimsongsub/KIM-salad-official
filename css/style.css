@@ -1,5 +1,6 @@
 @import url(reset.css);
 :root {
+  --normal-font-size: 1.5rem;
   --full-width: 100%;
   --section3-arrow-width: 3%;
   --wrap-padding: 15% 10% 10% 10%;
@@ -57,7 +58,7 @@ header .header-background .header-logo {
   width: 60%;
 }
 header .header-background .header-logo img {
-  width: 3rem;
+  width: 4.5rem;
   height: auto;
 }
 header .header-background .header-menu {
@@ -66,7 +67,7 @@ header .header-background .header-menu {
   justify-items: center;
   align-items: center;
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 header .header-background .header-menu :hover {
   cursor: pointer;
@@ -103,6 +104,7 @@ header .header-background .header-menu :hover {
   border-radius: 10px;
   width: 70%;
   height: 80%;
+  font-size: 1.5rem;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .wrap-detail-page .detail-menu-page .inner-detail-page :nth-child(8) {
@@ -122,7 +124,7 @@ header .header-background .header-menu :hover {
   border: 0px;
   border-radius: 10px;
   box-shadow: 4px 4px #999;
-  font-size: 0.7rem;
+  font-size: 1.05rem;
   cursor: pointer;
   color: white;
   background-color: black;
@@ -157,19 +159,19 @@ header .header-background .header-menu :hover {
 .section1-first-paragraph {
   padding-bottom: 10px;
   line-height: 50px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .section1-second-paragraph {
   padding: 10px;
-  font-size: 0.7rem;
+  font-size: 1.05rem;
 }
 
 .section1-menu {
   padding-left: 10%;
   margin-top: 5%;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
@@ -201,7 +203,7 @@ header .header-background .header-menu :hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: bold;
   opacity: 0;
 }
@@ -239,14 +241,14 @@ header .header-background .header-menu :hover {
   text-align: center;
   margin: 15% auto;
   line-height: 30px;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
 .section2-second-paragraph {
   text-align: left;
   margin: 5% 0 0 5%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -263,7 +265,7 @@ header .header-background .header-menu :hover {
   text-align: center;
   border: 0px;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
@@ -275,7 +277,7 @@ header .header-background .header-menu :hover {
   text-align: center;
   border: 0px;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
@@ -302,14 +304,14 @@ header .header-background .header-menu :hover {
 .section3-1-content {
   margin: 5% auto 0 auto;
   width: 80%;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .section3-1-qusetion {
   position: absolute;
   margin-left: 30%;
   line-height: 70px;
-  font-size: 2.5rem;
+  font-size: 3.75rem;
   font-weight: bold;
 }
 
@@ -319,7 +321,7 @@ header .header-background .header-menu :hover {
 }
 
 .section3-1-answer {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   text-shadow: 0 1px 0 #000000;
 }
@@ -333,7 +335,7 @@ header .header-background .header-menu :hover {
 
 .section3-1-description {
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -359,14 +361,14 @@ header .header-background .header-menu :hover {
 }
 
 .section3-2-answer {
-  font-size: 1.7rem;
+  font-size: 2.55rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content1 {
   margin: 50px 0 30px 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .section3-2-upper-images {
@@ -376,8 +378,8 @@ header .header-background .header-menu :hover {
 .section3-2-upper-images .pig2 {
   top: 23%;
   right: 13%;
-  width: 11rem;
-  height: 11rem;
+  width: 16.5rem;
+  height: 16.5rem;
 }
 
 .section3-2-background-canvas {
@@ -395,8 +397,8 @@ header .header-background .header-menu :hover {
 .section3-2-down-img .cow2 {
   top: 55%;
   left: 10%;
-  width: 12rem;
-  height: 12rem;
+  width: 18rem;
+  height: 18rem;
 }
 
 .pig1,
@@ -424,14 +426,14 @@ header .header-background .header-menu :hover {
 .section3-2-content2 {
   text-align: center;
   line-height: 28px;
-  font-size: 1.1rem;
+  font-size: 1.65rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content3 {
   margin-top: 5%;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .section3-3 {
@@ -444,7 +446,7 @@ header .header-background .header-menu :hover {
 
 .section3-3-answer {
   margin: 0 0 5% 10%;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -480,7 +482,7 @@ header .header-background .header-menu :hover {
 .section3-3-content {
   text-align: center;
   margin: 10% 5%;
-  font-size: 0.9rem;
+  font-size: 1.35rem;
   font-weight: bold;
 }
 
@@ -493,8 +495,8 @@ header .header-background .header-menu :hover {
 .section4-main {
   width: 70%;
   text-align: center;
-  line-height: 15rem;
-  font-size: 15rem;
+  line-height: 22.5rem;
+  font-size: 22.5rem;
   color: #ff6737;
   text-shadow: 2px 2px 2px black;
   opacity: 70%;

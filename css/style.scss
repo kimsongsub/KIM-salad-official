@@ -1,6 +1,7 @@
 @import url(reset.css);
 
 :root {
+  --normal-font-size: 1.5rem;
   --full-width: 100%;
   --section3-arrow-width: 3%;
   --wrap-padding: 15% 10% 10% 10%;
@@ -60,7 +61,7 @@ header {
       width: 60%;
 
       img {
-        width: 3rem;
+        width: 3 * 1.5rem;
         height: auto;
       }
     }
@@ -71,7 +72,7 @@ header {
       justify-items: center;
       align-items: center;
       width: 70%;
-      font-size: 1rem;
+      font-size: 1 * 1.5rem;
 
       :hover {
         cursor: pointer;
@@ -112,6 +113,7 @@ header {
       border-radius: 10px;
       width: 70%;
       height: 80%;
+      font-size: 1 * 1.5rem;
       background-color: rgba(255, 255, 255, 0.5);
 
       :nth-child(8) {
@@ -135,7 +137,7 @@ header {
   border: 0px;
   border-radius: 10px;
   box-shadow: 4px 4px #999;
-  font-size: 0.7rem;
+  font-size: 0.7 * 1.5rem;
   cursor: pointer;
   color: white;
   background-color: black;
@@ -172,19 +174,19 @@ header {
 .section1-first-paragraph {
   padding-bottom: 10px;
   line-height: 50px;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
   font-weight: bold;
 }
 
 .section1-second-paragraph {
   padding: 10px;
-  font-size: 0.7rem;
+  font-size: 0.7 * 1.5rem;
 }
 
 .section1-menu {
   padding-left: 10%;
   margin-top: 5%;
-  font-size: 1.5rem;
+  font-size: 1.5 * 1.5rem;
   font-weight: bold;
 }
 
@@ -219,7 +221,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 3 * 1.5rem;
   font-weight: bold;
   opacity: 0;
 }
@@ -259,14 +261,14 @@ header {
   text-align: center;
   margin: 15% auto;
   line-height: 30px;
-  font-size: 1.5rem;
+  font-size: 1.5 * 1.5rem;
   font-weight: bold;
 }
 
 .section2-second-paragraph {
   text-align: left;
   margin: 5% 0 0 5%;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
   font-weight: bold;
 }
 // section3
@@ -283,7 +285,7 @@ header {
   text-align: center;
   border: 0px;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 2 * 1.5rem;
   cursor: pointer;
 }
 
@@ -295,7 +297,7 @@ header {
   text-align: center;
   border: 0px;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 2 * 1.5rem;
   cursor: pointer;
 }
 
@@ -322,14 +324,14 @@ header {
 .section3-1-content {
   margin: 5% auto 0 auto;
   width: 80%;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
 }
 
 .section3-1-qusetion {
   position: absolute;
   margin-left: 30%;
   line-height: 70px;
-  font-size: 2.5rem;
+  font-size: 2.5 * 1.5rem;
   font-weight: bold;
 }
 
@@ -339,7 +341,7 @@ header {
 }
 
 .section3-1-answer {
-  font-size: 1.5rem;
+  font-size: 1.5 * 1.5rem;
   font-weight: bold;
   text-shadow: 0 1px 0 #000000;
 }
@@ -353,7 +355,7 @@ header {
 
 .section3-1-description {
   text-align: right;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
   font-weight: bold;
 }
 
@@ -380,14 +382,14 @@ header {
 }
 
 .section3-2-answer {
-  font-size: 1.7rem;
+  font-size: 1.7 * 1.5rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content1 {
   margin: 50px 0 30px 0;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
 }
 
 .section3-2-upper-images {
@@ -397,8 +399,8 @@ header {
   .pig2 {
     top: 23%;
     right: 13%;
-    width: 11rem;
-    height: 11rem;
+    width: 11 * 1.5rem;
+    height: 11 * 1.5rem;
   }
 }
 
@@ -417,8 +419,8 @@ header {
   .cow2 {
     top: 55%;
     left: 10%;
-    width: 12rem;
-    height: 12rem;
+    width: 12 * 1.5rem;
+    height: 12 * 1.5rem;
   }
 }
 
@@ -447,14 +449,14 @@ header {
 .section3-2-content2 {
   text-align: center;
   line-height: 28px;
-  font-size: 1.1rem;
+  font-size: 1.1 * 1.5rem;
   font-weight: bold;
   text-shadow: 0px 1px 0 #000000;
 }
 
 .section3-2-content3 {
   margin-top: 5%;
-  font-size: 1rem;
+  font-size: 1 * 1.5rem;
 }
 
 .section3-3 {
@@ -467,7 +469,7 @@ header {
 
 .section3-3-answer {
   margin: 0 0 5% 10%;
-  font-size: 2rem;
+  font-size: 2 * 1.5rem;
   font-weight: bold;
 }
 
@@ -503,7 +505,7 @@ header {
 .section3-3-content {
   text-align: center;
   margin: 10% 5%;
-  font-size: 0.9rem;
+  font-size: 0.9 * 1.5rem;
   font-weight: bold;
 }
 // section4
@@ -516,8 +518,8 @@ header {
 .section4-main {
   width: 70%;
   text-align: center;
-  line-height: 15rem;
-  font-size: 15rem;
+  line-height: 15 * 1.5rem;
+  font-size: 15 * 1.5rem;
   color: #ff6737;
   text-shadow: 2px 2px 2px black;
   opacity: 70%;
