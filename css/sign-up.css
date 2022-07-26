@@ -10,21 +10,26 @@
 
 .wrap-sign-up-form {
   display: flex;
-  margin-top: 6%;
+  margin-top: 5%;
 }
 
 .wrap-sign-up-form-left {
-  background-color: bisque;
   text-align: end;
   width: 40vw;
 }
 
 .wrap-sign-up-form-left div {
-  margin: 2% 2% 12% 2%;
+  margin: 30px 10px 50px 10px;
+}
+
+@media (max-width: 1080px) {
+  .wrap-sign-up-form-left div {
+    margin: 25px 10px 40px 10px;
+  }
 }
 
 .wrap-sign-up-form-left :nth-child(4) {
-  margin-top: calc(3.5 * 1.5rem);
+  margin-top: 110px;
 }
 
 .wrap-sign-up-form-left span {
@@ -33,7 +38,6 @@
 }
 
 .wrap-sign-up-form-right {
-  background-color: aqua;
   width: 70vw;
 }
 
@@ -43,14 +47,14 @@
 
 .wrap-sign-up-form-input {
   text-align: center;
-  width: calc(20 * 1.5rem);
+  width: calc(14 * 1.5rem);
   height: calc(2 * 1.5rem);
-  margin: 1%;
+  margin: 15px;
   border: 2px black solid;
 }
 
 .confirm-btn {
-  margin-bottom: 8%;
+  margin-bottom: 80px;
   font-size: calc(1 * 1.5rem);
 }
 
